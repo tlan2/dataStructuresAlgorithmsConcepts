@@ -1,0 +1,160 @@
+<!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
+# Data Structures, Algorithms, and Other CS Concepts
+
+In order to enhance my performance in technical skills and long-term coding skills, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
+
+## Table of Contents
+
+| Data Structures | Algorithms | Concepts |
+| :---: | :---: | :---: |
+| [Linked Lists](#linked-lists) | Breadth-First Search | Bit Manipulation |
+| Trees, Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
+| Stacks & Queues | Binary Search | Recursion |
+| Heaps | Merge Sort | Dynamic Programming |
+| Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-&-space) |
+| Hash Tables | | |
+<br/>
+
+# Data Structures
+## Linked Lists
+<hr>
+
+File: *dataStructures/linkedLists.js* 
+
+| Pros | Cons |
+| :--- | :--- |
+| 1. Can add or remove nodes easily without reorganizing the whole data structure. | 1. Search operation is slow since you have to sequentially go over the list. | 
+| |2. Uses more storage space due to storing pointers
+### Big O
+| Pros | Cons |
+| :--- | :--- |
+<br/>
+
+<!-- 
+## Trees
+<hr>
+
+## Tries 
+<hr>
+
+## Graphs
+<hr>
+
+
+## Stacks 
+<hr>
+
+## Queues
+<hr>
+
+## Heaps
+<hr>
+
+## Vectors / ArrayLists
+<hr>
+
+## Hash Tables
+<hr>
+-->
+<!--  
+# Algorithms
+## Breadth-First Search
+<hr>
+
+## Depth-First Search
+<hr>
+
+## Binary Search
+<hr>
+
+## Merge Sort
+<hr>
+
+## Quick Sort
+<hr>
+
+<br/>
+-->
+# Concepts
+<!--  
+## Bit Manipulation
+<hr>
+
+## Memory (Stack vs. Heap)
+<hr>
+
+## Recursion
+<hr>
+
+## Dynamic Programming
+<hr>
+-->
+## Big O Time & Space
+<hr>
+
+File: *concepts/bigO.apkg* (Anki Deck)
+
+### Time Complexity
+* Big O is the language and metric that describes the efficiency of an algorithm
+* If you don’t know it well, then:
+    - You will be judged harshly by other programmers and colleagues
+    - Struggle to judge whether your algorithm is getting faster or slower
+* *Master Big O!*
+* Some of most common runtimes are:
+    - O(log N)
+    - O(N log N)
+    - O(N)
+    - O(N^2)
+    - O(2^N)
+* You can have multiple variables in your runtime
+    - To paint a fence that’s w meters wide and h meters high could be described as O(wh).
+    - If you need p layers of paint, then the time is O(whp)
+### Space Complexity
+* The amount of memory required by an algorithm is also important.
+* Parallel to time complexity
+* An array of size n, requires O(n) space.
+    - If 2D array of size n x n, requires O(n^2) space
+
+
+
+
+<br/>
+
+# Contact
+Tom Lancaster - thomas.m.lancaster@gmail.com
+- [Portfolio](https://tlan2.github.io/portfolio/) 
+- [LinkedIn](https://www.linkedin.com/in/thomasmorelancaster/) 
+- [GitHub](https://github.com/tlan2)
+
+
+
+<br/>
+
+# Acknowledgements
+## General
+- [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
+
+## Data Structures
+* Linked Lists
+    - [How to Implement a Linked List in Java - freecodecamp.com](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
+    - [Linked Lists in JavaScript (ES6 code) - codeburst.io](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
+* Trees, Tries, & Graphs
+* Stacks & Queues
+* Heaps
+* Vectors / ArrayLists
+* Hash Tables
+## Algorithms
+* Breadth-First Search
+* Depth-First Search
+* Binary Search
+* Merge Sort
+* Quick Sort
+## Concepts
+* Bit Manipulation
+* Memory (Stack vs. Heap)
+* Recursion
+* Dynamic Programming
+* Big O Time & Space
+    - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com) - Ch VI - "Big O"
+    - [bigOcheatsheet.com](https://www.bigocheatsheet.com)
+

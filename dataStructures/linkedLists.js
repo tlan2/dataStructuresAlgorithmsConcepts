@@ -1,8 +1,6 @@
 // Tom Lancaster (c) February 2021
 // linkedLists.js - Data Structure
 //
-// Purpose: To understand linked lists better by making one from scratch.
-//
 // *** Advantages ***
 // 1. Can add or remove nodes easily without reorganizing the whole data structure.
 //
