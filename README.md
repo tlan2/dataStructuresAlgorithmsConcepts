@@ -22,12 +22,12 @@ In order to enhance my performance in technical skills and long-term coding skil
 File: *dataStructures/linkedLists.js* 
 
 | Pros | Cons |
-| :--- | :--- |
+| :---: | :---: |
 | 1. Can add or remove nodes easily without reorganizing the whole data structure. | 1. Search operation is slow since you have to sequentially go over the list. | 
 | |2. Uses more storage space due to storing pointers
 ### Big O
-| Pros | Cons |
-| :--- | :--- |
+![Big O Table Header](images/bigOheader.png)
+![Linked Lists](images/bigOLinkedList.png)
 <br/>
 
 <!-- 
