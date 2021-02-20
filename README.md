@@ -27,13 +27,14 @@ File: *dataStructures/linkedLists.js*
 | |2. Uses more storage space due to storing pointers
 ### Big O
 ![Big O Table Header](images/bigOheader.png)
-![Linked Lists](images/bigOLinkedList.png)
+![Linked Lists](images/linkedListBigO.png)
 <br/>
 
-<!-- 
+ 
 ## Trees
 <hr>
 
+<!--
 ## Tries 
 <hr>
 
@@ -90,7 +91,9 @@ File: *dataStructures/linkedLists.js*
 <hr>
 -->
 ## Big O Time & Space
-<hr>
+<hr/>
+
+![Big O Complexity Chart](images/bigOComplexityChart.png)
 
 File: *concepts/bigO.apkg* (Anki Deck)
 
@@ -138,7 +141,9 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 * Linked Lists
     - [How to Implement a Linked List in Java - freecodecamp.com](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
     - [Linked Lists in JavaScript (ES6 code) - codeburst.io](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
+    - - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
 * Trees, Tries, & Graphs
+    - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
 * Stacks & Queues
 * Heaps
 * Vectors / ArrayLists

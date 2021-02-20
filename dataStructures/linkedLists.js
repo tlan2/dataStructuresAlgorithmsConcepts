@@ -1,12 +1,6 @@
 // Tom Lancaster (c) February 2021
 // linkedLists.js - Data Structure
 //
-// *** Advantages ***
-// 1. Can add or remove nodes easily without reorganizing the whole data structure.
-//
-// *** Disadvantages *** 
-// 1. Search operation is slow since you have to sequentially go over the list.
-// 2. Uses more storage space due to storing pointers
 
 class ListNode {
   constructor(data){
@@ -195,8 +189,8 @@ console.log('list.size() after delete = ' + list.size());
 console.log('list.printList() = ' + list.printList());
 console.log('\n')
 
-// console.log('Test #: Clear function removes all nodes from list')
-// console.log('list.size() before clear = ' + list.size());
-// list.clear();
-// console.log('list.size() after clear = ' + list.size())
-// console.log('\n')
+console.log('Test #: Clear function removes all nodes from list')
+console.log('list.size() before clear = ' + list.size());
+list.clear();
+console.log('list.size() after clear = ' + list.size())
+console.log('\n')
