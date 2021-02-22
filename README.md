@@ -1,6 +1,7 @@
 <!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
 # Data Structures, Algorithms, and Other CS Concepts
 
+![Data Structures, Algorithms, and Other CS Concepts](images/header.jpeg)
 ## Table of Contents
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
@@ -23,13 +24,10 @@ In order to enhance my coding skills and perform well in technical interviews, a
 * [JavaScript (Wiki)](https://en.wikipedia.org/wiki/JavaScript)
 # Data Structures
 ## Linked Lists
-
+Singly Linked List
 ![Singly Linked List](images/singlyLinkedList.png)
-*Singly Linked List*
-
+Doubly Linked List
 ![Doubly Linked List](images/doublyLinkedList.png)
-
-*Doubly Linked List*
 
 File: *dataStructures/linkedLists.js* 
 
@@ -91,9 +89,9 @@ A tree is a data structure composed of nodes that:
 
     Balanced tree means something more like “not terribly imbalance.” It is balanced enough to ensure O(log n) insert and find times.
     *Note: In interviews, assume you have a balanced tree.*
-        - 2 common types of balanced trees:
-            - Red-black trees
-            - AVL trees
+    - 2 common types of balanced trees:
+        - Red-black trees
+        - AVL trees
 * **Complete Binary Tree**:
     
     ![Complete Binary Tree](images/completeBinaryTree.png)
@@ -205,26 +203,14 @@ File: *concepts/bigO.apkg* (Anki Deck)
 * Parallel to time complexity
 * An array of size n, requires O(n) space.
     - If 2D array of size n x n, requires O(n^2) space
-
-
-
-
-<br/>
-
 # Contact
 Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Portfolio](https://tlan2.github.io/portfolio/) 
 - [LinkedIn](https://www.linkedin.com/in/thomasmorelancaster/) 
 - [GitHub](https://github.com/tlan2)
-
-
-
-<br/>
-
 # Acknowledgements
 ## General
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
-
 ## Data Structures
 * Linked Lists
     - [How to Implement a Linked List in Java  (freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
