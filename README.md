@@ -1,12 +1,11 @@
 <!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
 # Data Structures, Algorithms, and Other CS Concepts
 
-![logo](images/logo.jpg)
 ## Table of Contents
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 
-| Data Structures | Algorithms | Concepts |
+| [Data Structures](#data-structures) | Algorithms | [Concepts](#concepts) |
 | :---: | :---: | :---: |
 | [Linked Lists](#linked-lists) | Breadth-First Search | Bit Manipulation |
 | [Trees](#trees), Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
@@ -25,7 +24,16 @@ In order to enhance my coding skills and perform well in technical interviews, a
 # Data Structures
 ## Linked Lists
 
+![Singly Linked List](images/singlyLinkedList.png)
+*Singly Linked List*
+
+![Doubly Linked List](images/doublyLinkedList.png)
+
+*Doubly Linked List*
+
 File: *dataStructures/linkedLists.js* 
+
+A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node. 
 
 | Pros | Cons |
 | :---: | :---: |
@@ -39,20 +47,82 @@ File: *dataStructures/linkedLists.js*
  
 ## Trees
 
+![Tree Diagram](images/trees.png)
+
 File: *dataStructures/binarySearchTree.js*
 
-### Big O
-![Big O Table Header](images/bigOheader.png)
-![Trees Big O](images/treesBigO.png)
-<br/>
+Report: *[Final Project Report](https://drive.google.com/file/d/15tfnANoty4ZpfQTqUiNw9XIQhUfkCtN-/view)* on B-trees, Red-Black trees, and Binary Search trees for Graduate Algorithms Course
 
+A tree is a data structure composed of nodes that:
+* Has a root node
+* The root node has zero or more child nodes
+* Each child node has zero or more child nodes
+* Does not contain cycles
+* May or may not be in a particular order
+* Can have any data type as values
+* May or may not have links back to their parent nodes
+### Key Terms
+* **Root**: top node of tree where all operations start
+* **Node**: each item in the tree, usually key-value
+* **Parent**: a node which is a *predecessor* of any node
+* **Child**: a node which is a *descendant* of any ndoe
+* **Siblings**: a group of nodes that have the same parent
+* **Leaf**: a node without children
+* **Level**: 1 + the number of edges between the node and the root
+* **Height**: the number of edges from the root to its furthest leaf
+* **Depth**: the number of edges from the node to the tree's root
+* **Sub-tree**: a portion of the tree that can be viewed as a complete tree in itself
+### Types of Trees
+* **Binary / *n*-ary Tree**: 
+    
+    ![Binary Ternary Trees](images/binaryTernarytree.png)
+
+    A binary tree is a tree in which each node has up to two children while an *n*-ary tree can have *n* possible children
+    
+* **Binary *Search* Tree**: 
+     
+     ![Binary Search Tree & Not Binary Search Tree  Trees](images/bst.png)
+
+    A binary search tree is a binary tree in which every node fits a specific ordering property: all left descendents <= n < all right descendents. This must be true for each node n. Duplicate values are sometimes permitted depending on the interviewer.
+   
+* **Balanced / Unbalanced Tree**:
+     
+     ![Balanced / Unbalanced Trees](images/balancedUnbalancedTree.png)
+
+    Balanced tree means something more like “not terribly imbalance.” It is balanced enough to ensure O(log n) insert and find times.
+    *Note: In interviews, assume you have a balanced tree.*
+        - 2 common types of balanced trees:
+            - Red-black trees
+            - AVL trees
+* **Complete Binary Tree**:
+    
+    ![Complete Binary Tree](images/completeBinaryTree.png)
+
+    A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
+* **Full Binary Tree**:
+    
+    ![Full Binary Tree](images/fullBinaryTree.png)
+
+    A full binary tree is a binary tree in which every node has either zero or two children. That is, no nodes have only one child.
+* **Perfect Binary Tree**:
+
+    ![Perfect Binary Tree](images/perfectBinaryTree.png)
+    
+    A perfect binary tree is one that is both full and complete. All leaf nodes will be at the same level, and this level has the maximum number of nodes. 
 ### Traversals
 * In-Order
     - In-order traversal means to "visit" (often, print) the left branch, then the current node, and finally, the right branch. 
 * Pre-Order
     - Pre-order traversal visits the current node before its child nodes (hence the name "pre-order"). 
 * Post-Order
-    - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.  
+    - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.     
+
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Trees Big O](images/treesBigO.png)
+<br/>
+
+  
 
 <!--
 ## Tries 
@@ -157,11 +227,12 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 
 ## Data Structures
 * Linked Lists
-    - [How to Implement a Linked List in Java - freecodecamp.com](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
-    - [Linked Lists in JavaScript (ES6 code) - codeburst.io](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
+    - [How to Implement a Linked List in Java  (freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
+    - [Linked Lists in JavaScript (codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
     - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
 * Trees, Tries, & Graphs
     - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
+    - [Trees vs. Graphs (Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
 * Stacks & Queues
 * Heaps
 * Vectors / ArrayLists
