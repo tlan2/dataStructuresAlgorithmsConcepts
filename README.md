@@ -1,7 +1,7 @@
 <!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
 # Data Structures, Algorithms, and Other CS Concepts
 
-In order to enhance my performance in technical skills and long-term coding skills, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
+In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
 
 ## Table of Contents
 
@@ -11,13 +11,12 @@ In order to enhance my performance in technical skills and long-term coding skil
 | [Trees](#trees), Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
-| Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-&-space) |
+| Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
 | Hash Tables | | |
 <br/>
 
 # Data Structures
 ## Linked Lists
-<hr>
 
 File: *dataStructures/linkedLists.js* 
 
@@ -32,7 +31,6 @@ File: *dataStructures/linkedLists.js*
 
  
 ## Trees
-<hr/>
 
 File: *dataStructures/binarySearchTree.js*
 
@@ -105,9 +103,7 @@ File: *dataStructures/binarySearchTree.js*
 ## Dynamic Programming
 <hr>
 -->
-## Big O Time & Space
-<hr/>
-
+### Big O Time and Space
 ![Big O Complexity Chart](images/bigOComplexityChart.png)
 
 File: *concepts/bigO.apkg* (Anki Deck)
@@ -156,7 +152,7 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 * Linked Lists
     - [How to Implement a Linked List in Java - freecodecamp.com](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
     - [Linked Lists in JavaScript (ES6 code) - codeburst.io](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
-    - - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
+    - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
 * Trees, Tries, & Graphs
     - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
 * Stacks & Queues
