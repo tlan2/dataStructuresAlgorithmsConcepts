@@ -14,13 +14,11 @@
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
 | Hash Tables | | |
-<hr/>
-
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project
-In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
+In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table above from scratch.
 
 ## Built With
 * [JavaScript (Wiki)](https://en.wikipedia.org/wiki/JavaScript)
