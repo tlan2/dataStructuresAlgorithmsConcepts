@@ -1,9 +1,10 @@
 <!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
 # Data Structures, Algorithms, and Other CS Concepts
 
-In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
-
+![logo](images/logo.jpg)
 ## Table of Contents
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
 
 | Data Structures | Algorithms | Concepts |
 | :---: | :---: | :---: |
@@ -13,8 +14,16 @@ In order to enhance my coding skills and perform well in technical interviews, a
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
 | Hash Tables | | |
-<br/>
+<hr/>
 
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
+## About the Project
+In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table below from scratch.
+
+## Built With
+* [JavaScript (Wiki)](https://en.wikipedia.org/wiki/JavaScript)
 # Data Structures
 ## Linked Lists
 
