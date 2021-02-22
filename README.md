@@ -8,7 +8,7 @@ In order to enhance my performance in technical skills and long-term coding skil
 | Data Structures | Algorithms | Concepts |
 | :---: | :---: | :---: |
 | [Linked Lists](#linked-lists) | Breadth-First Search | Bit Manipulation |
-| Trees, Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
+| [Trees](#trees), Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-&-space) |
@@ -32,7 +32,22 @@ File: *dataStructures/linkedLists.js*
 
  
 ## Trees
-<hr>
+<hr/>
+
+File: *dataStructures/binarySearchTree.js*
+
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Trees Big O](images/treesBigO.png)
+<br/>
+
+### Traversals
+* In-Order
+    - In-order traversal means to "visit" (often, print) the left branch, then the current node, and finally, the right branch. 
+* Pre-Order
+    - Pre-order traversal visits the current node before its child nodes (hence the name "pre-order"). 
+* Post-Order
+    - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.  
 
 <!--
 ## Tries 

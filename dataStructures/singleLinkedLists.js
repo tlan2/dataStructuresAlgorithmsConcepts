@@ -1,6 +1,6 @@
 // Tom Lancaster (c) February 2021
 // linkedLists.js - Data Structure
-//
+// Single Linked List
 
 class ListNode {
   constructor(data){
