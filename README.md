@@ -9,7 +9,7 @@
 | [Data Structures](#data-structures) | Algorithms | [Concepts](#concepts) |
 | :---: | :---: | :---: |
 | [Linked Lists](#linked-lists) | Breadth-First Search | Bit Manipulation |
-| [Trees](#trees), Tries, & Graphs | Depth-First Search | Memory (Stack vs. Heap) |
+| [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | Depth-First Search | Memory (Stack vs. Heap) |
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
@@ -21,7 +21,7 @@
 In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table above from scratch.
 
 ## Built With
-* [JavaScript (Wiki)](https://en.wikipedia.org/wiki/JavaScript)
+* [JavaScript (Wikipedia)](https://en.wikipedia.org/wiki/JavaScript)
 # Data Structures
 ## Linked Lists
 Singly Linked List
@@ -51,7 +51,7 @@ It is conceptually the same as an array with the only difference bing the effici
 
 ### Real-Life Examples
 1. Conga Line (Metaphorical)
-![Conga Line](images/conga_line.jpg)
+<br/>![Conga Line](images/conga_line.jpg)
 2. Network Message Delivery (Singly Linked List)
 Message is broken down into packets and each packet has a key to the next one.
 <br/>![Network Message Deliver](images/packets.jpg)
@@ -155,10 +155,11 @@ A tree is a data structure composed of nodes that:
 - A trie (sometimes called a prefix tree) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may
 represent a word.
 - The * nodes (sometimes called "null nodes") are often used to indicate complete words. For example, the fact that there is a * node under MANY indicates that MANY is a complete word. The existence of the MA path indicates there are words that start with MA. 
-- . In situations when we search
+- In situations when we search
 through the tree on related prefixes repeatedly (e.g., looking up M, then MA, then MAN, then MANY), we might pass around a reference to the current node in the tree. This will allow us to just check if Y is a child of MAN, rather than starting from the root each time. 
 
 Real-Life Example(s)
+
 1. Quick prefix lookups - While a hash
 table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
 
@@ -167,12 +168,20 @@ table can quickly look up whether a string is a valid word, it cannot tell us if
 <hr>
 
 A graph is a collection of nodes with edges between (some of) them.
+<br/>
+
 ![Vertices & Edges](images/graphEdgeVertex.png)
 - Graphs can be directed or undirected. Directed are like 1-way streets and undirected are like 2 way streets.
+<br/>
+
 ![Directed & Undirected Graphs](images/directedUndirectedgraphs.png)
 - A graph might consist of multiple isolated subgraphs. If there is a path between every pair of vertices, it is called a "connected graph."
+<br/>
+
 ![Subgraph](images/subgraph.png)
 - A graph can have cycles. An "acyclic graph" is one without cycles.
+<br/>
+
 ![Graph w/ cycle & Acyclic Graph](images/cyclicAcyclicGraphs.png)
 - Programmatically, there are two common ways to represent a graph:
     1. Adjacency List
@@ -272,27 +281,39 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 * Linked Lists
     - [How to Implement a Linked List in Java  (freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
     - [Linked Lists in JavaScript (codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
-    - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
+    - [Data Structures - Linked Lists  \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
     - [What is a practical, real world example of the Linked List? (stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
 * Trees, Tries, & Graphs
     - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
     - [Trees vs. Graphs (Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
+    - [Data Structures: Tries \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt&index=16)
 * Stacks & Queues
+    - [Data Structures: Stacks & Queues \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
 * Heaps
+    - [Algorithms: Graph Search, DFS, and BFS \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
 * Vectors / ArrayLists
 * Hash Tables
+    - [Data Structures: Hash Tables \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=5)
 ## Algorithms
 * Breadth-First Search
 * Depth-First Search
+    - [Algorithms: Graph Search, DFS, and BFS \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
 * Binary Search
+    - [Algorithms: Binary Search \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=P3YID7liBug&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=27)
 * Merge Sort
+    - [Algorithms: Merge Sort \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=KF2j-9iSf4Q&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=20)
 * Quick Sort
+    - [Algorithms: Quicksort \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=SLauY6PpjW4&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=21)
 ## Concepts
 * Bit Manipulation
+    - [Data Structures: Heaps \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
 * Memory (Stack vs. Heap)
 * Recursion
+    - [Algorithms: Recursion \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
 * Dynamic Programming
+    - [Algorithms: Memoization and Dynamic Programming \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
 * Big O Time & Space
     - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com) - Ch VI - "Big O"
     - [bigOcheatsheet.com](https://www.bigocheatsheet.com)
+    - [Big O Notation \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7)
 
