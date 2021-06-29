@@ -13,7 +13,7 @@
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
-| Hash Tables | | |
+| Hash Tables | Union Find | |
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -26,17 +26,39 @@ In order to enhance my coding skills and perform well in technical interviews, a
 ## Linked Lists
 Singly Linked List
 ![Singly Linked List](images/singlyLinkedList.png)
+
 Doubly Linked List
+
 ![Doubly Linked List](images/doublyLinkedList.png)
+
+Circular Linked List
+
+![Circular Linked List](images/circularLinkedList.jpg)
 
 File: *dataStructures/linkedLists.js* 
 
-A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node. 
+A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.
+<br/>
+<br/>
+It is conceptually the same as an array with the only difference bing the efficiency of various operations. Most importantly:
+- Insertion in middle: O(1) for linked list, O(n) for array
+- Direct access to middle element: O(n) for linked list, O(1) for array
 
 | Pros | Cons |
 | :---: | :---: |
-| 1. Can add or remove nodes easily without reorganizing the whole data structure. | 1. Search operation is slow since you have to sequentially go over the list. | 
-| |2. Uses more storage space due to storing pointers
+| 1. Insertion/Deletion - Can add or remove nodes easily without reorganizing the whole data structure. | 1. Search/Access - Search operation is slow since you have to sequentially go over the list. | 
+| |2. Space - Uses more storage space due to storing pointers
+
+### Real-Life Examples
+1. Conga Line (Metaphorical)
+![Conga Line](images/conga_line.jpg)
+2. Network Message Delivery (Singly Linked List)
+Message is broken down into packets and each packet has a key to the next one.
+<br/>![Network Message Deliver](images/packets.jpg)
+3. Browser cache w/ Back Button (Doubly Linked List)
+4. DNA Molecules (Doubly Linked List)
+5. List of website users that need to be emailed an notification
+
 ### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Linked Lists](images/linkedListBigO.png)
@@ -75,33 +97,36 @@ A tree is a data structure composed of nodes that:
     
     ![Binary Ternary Trees](images/binaryTernarytree.png)
 
-    A binary tree is a tree in which each node has up to two children while an *n*-ary tree can have *n* possible children
+    A binary tree is a tree in which each node has up to two children while an *n*-ary tree can have *n* possible children such ternary tree which has 3 children.
     
 * **Binary *Search* Tree**: 
      
      ![Binary Search Tree & Not Binary Search Tree  Trees](images/bst.png)
 
-    A binary search tree is a binary tree in which every node fits a specific ordering property: all left descendents <= n < all right descendents. This must be true for each node n. Duplicate values are sometimes permitted depending on the interviewer.
+    A binary search tree is a binary tree in which every node fits a specific ordering property: *all left descendents <= n < all right descendents*. This must be true for each node n. Duplicate values are sometimes permitted depending on the interviewer.
    
 * **Balanced / Unbalanced Tree**:
      
      ![Balanced / Unbalanced Trees](images/balancedUnbalancedTree.png)
 
-    Balanced tree means something more like “not terribly imbalance.” It is balanced enough to ensure O(log n) insert and find times.
+    Balanced tree means something more like “not terribly imbalance.” It is balanced enough to ensure *O(log n)* insert and find times.
     *Note: In interviews, assume you have a balanced tree.*
     - 2 common types of balanced trees:
         - Red-black trees
         - AVL trees
+
 * **Complete Binary Tree**:
     
     ![Complete Binary Tree](images/completeBinaryTree.png)
 
     A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
+
 * **Full Binary Tree**:
     
     ![Full Binary Tree](images/fullBinaryTree.png)
 
     A full binary tree is a binary tree in which every node has either zero or two children. That is, no nodes have only one child.
+
 * **Perfect Binary Tree**:
 
     ![Perfect Binary Tree](images/perfectBinaryTree.png)
@@ -122,14 +147,45 @@ A tree is a data structure composed of nodes that:
 
   
 
-<!--
+
 ## Tries 
 <hr>
+
+![Tries Example](images/tries.png)
+- A trie (sometimes called a prefix tree) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may
+represent a word.
+- The * nodes (sometimes called "null nodes") are often used to indicate complete words. For example, the fact that there is a * node under MANY indicates that MANY is a complete word. The existence of the MA path indicates there are words that start with MA. 
+- . In situations when we search
+through the tree on related prefixes repeatedly (e.g., looking up M, then MA, then MAN, then MANY), we might pass around a reference to the current node in the tree. This will allow us to just check if Y is a child of MAN, rather than starting from the root each time. 
+
+Real-Life Example(s)
+1. Quick prefix lookups - While a hash
+table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
+
 
 ## Graphs
 <hr>
 
+A graph is a collection of nodes with edges between (some of) them.
+![Vertices & Edges](images/graphEdgeVertex.png)
+- Graphs can be directed or undirected. Directed are like 1-way streets and undirected are like 2 way streets.
+![Directed & Undirected Graphs](images/directedUndirectedgraphs.png)
+- A graph might consist of multiple isolated subgraphs. If there is a path between every pair of vertices, it is called a "connected graph."
+![Subgraph](images/subgraph.png)
+- A graph can have cycles. An "acyclic graph" is one without cycles.
+![Graph w/ cycle & Acyclic Graph](images/cyclicAcyclicGraphs.png)
+- Programmatically, there are two common ways to represent a graph:
+    1. Adjacency List
+        - Most common way to represent a graph. Node classes are usually used.
+        - Every vertex/node stores a list of adjacent vertices.
+        - Simple Class Definition
+        ![Graph Class](images/graphClass.png)
+    2. Adjacency Matrixes
+        - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
+        - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
+- Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 
+<!-- 
 ## Stacks 
 <hr>
 
@@ -143,9 +199,9 @@ A tree is a data structure composed of nodes that:
 <hr>
 
 ## Hash Tables
-<hr>
--->
-<!--  
+<hr> -->
+
+  
 # Algorithms
 ## Breadth-First Search
 <hr>
@@ -153,6 +209,7 @@ A tree is a data structure composed of nodes that:
 ## Depth-First Search
 <hr>
 
+<!--
 ## Binary Search
 <hr>
 
@@ -216,6 +273,7 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
     - [How to Implement a Linked List in Java  (freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
     - [Linked Lists in JavaScript (codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
     - [Data Structures - Linked Lists  \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
+    - [What is a practical, real world example of the Linked List? (stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
 * Trees, Tries, & Graphs
     - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
     - [Trees vs. Graphs (Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
