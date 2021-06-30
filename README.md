@@ -1,4 +1,3 @@
-<!-- [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) -->
 # Data Structures, Algorithms, and Other CS Concepts
 
 ![Data Structures, Algorithms, and Other CS Concepts](images/header.jpeg)
@@ -144,10 +143,6 @@ A tree is a data structure composed of nodes that:
 ![Big O Table Header](images/bigOheader.png)
 ![Trees Big O](images/treesBigO.png)
 <br/>
-
-  
-
-
 ## Tries 
 <hr>
 
@@ -162,7 +157,6 @@ Real-Life Example(s)
 
 1. Quick prefix lookups - While a hash
 table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
-
 
 ## Graphs
 <hr>
@@ -195,22 +189,54 @@ A graph is a collection of nodes with edges between (some of) them.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 
-<!-- 
+
 ## Stacks 
 <hr>
 
+![Stack Example](images/stackExample.png)
+- A stack is a stack of data.
+- Uses last-in first-out (LIFO) ordering. For example, the most recent dinner plate put on the stack is the first item to be removed.
+- Operations:
+    - pop(): Remove the top item from the stack.
+    - push(item): Add an item to the top of the stack
+    - peek(): Return the top of the stack.
+    - isEmpty(): Return true if and only if the stack is empty.
+- Has constant-time adds and removes.
+- No constant-time access.
+- Can be implemented as a linked list *as long as* the items are added and removed from *the same side*.
+- Use Case: Certain recursive algorithms.
 ## Queues
 <hr>
 
+![Queue Example](images/queue.png)
+
+- With a queue, items are removed from the data structure in the same order that they are added which is FIFO (first-in first-out) ordering.
+- Operations:
+    - add(item): Add an item to the end of the list.
+    - remove(): Remove the first item in the list.
+    - peek(): Return the top of the queue.
+    - isEmpty(): Return true if and only if the queue is empty.
+- Can be implemented as linked list *as long as* items are added and removed from *opposite sides*.
+- Use Case: Implementing a cache
+<!-- 
 ## Heaps
 <hr>
 
 ## Vectors / ArrayLists
 <hr>
-
+-->
 ## Hash Tables
-<hr> -->
+<hr> 
 
+![Hash Table Example](images/hashTable.png)
+- A data structure that mapes keys to values for highly efficient lookups
+- Example Simple Yet Common Implementation:
+    1. Computer the hash code which is usually an *int* or *long*.
+    2. Map hash code to index in array using something like *hash(key) % array_length*.
+    3. Store value in linked list in array.
+- If the number of collisions is very high, then worst case runtime is O(N) where N is the number of keys. Otherwise, lookup time is O(1)
+
+- Can also implement hash table with a balanced binary search tree which gives us O(log N) lookup time and potentially uses less space since we are not allocating space for a large array. Can also iterate through keys in order.
   
 # Algorithms
 ## Breadth-First Search
