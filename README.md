@@ -8,8 +8,8 @@
 
 | [Data Structures](#data-structures) | Algorithms | [Concepts](#concepts) |
 | :---: | :---: | :---: |
-| [Linked Lists](#linked-lists) | Breadth-First Search | Bit Manipulation |
-| [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | Depth-First Search | Memory (Stack vs. Heap) |
+| [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | Bit Manipulation |
+| [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | Memory (Stack vs. Heap) |
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
@@ -189,6 +189,7 @@ A graph is a collection of nodes with edges between (some of) them.
         - Every vertex/node stores a list of adjacent vertices.
         - Simple Class Definition
         ![Graph Class](images/graphClass.png)
+        <br/>
     2. Adjacency Matrixes
         - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
@@ -215,8 +216,20 @@ A graph is a collection of nodes with edges between (some of) them.
 ## Breadth-First Search
 <hr>
 
+![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
+- BFS starts at the root and explores each neighbor before going o nto any of their children. We go wide (hence *breadth*-first search) before we go deep.
+- BFS is *not* recursive and uses a queue to visit all the neighbors.
+- If you want to find the shortes path between 2 nodes, BFS is generally better.
+- Use Case: Find degrees of separation between two friends or exploring a network of friendships.
+
 ## Depth-First Search
 <hr>
+
+![DFS Example](images/dfs.png)
+- DFS preferred if you want to visit every node in the graph.
+- Exhaustively explore each branch before moving onto the next one.
+- Is typically recursive and requires a *visited* flag.
+- Simpler to implement than BFS.
 
 <!--
 ## Binary Search
