@@ -12,7 +12,7 @@
 | Stacks & Queues | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
 | Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
-| Hash Tables | Union Find | |
+| [Hash Tables](#hash-tables) | Union Find | |
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -175,15 +175,15 @@ A graph is a collection of nodes with edges between (some of) them.
 ![Subgraph](images/subgraph.png)
 - A graph can have cycles. An "acyclic graph" is one without cycles.
 <br/>
-
 ![Graph w/ cycle & Acyclic Graph](images/cyclicAcyclicGraphs.png)
 - Programmatically, there are two common ways to represent a graph:
     1. Adjacency List
         - Most common way to represent a graph. Node classes are usually used.
         - Every vertex/node stores a list of adjacent vertices.
         - Simple Class Definition
-        ![Graph Class](images/graphClass.png)
         <br/>
+        ![Graph Class](images/graphClass.png)
+        
     2. Adjacency Matrixes
         - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
