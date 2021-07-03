@@ -10,8 +10,8 @@
 | [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | Bit Manipulation |
 | [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | Memory (Stack vs. Heap) |
 | [Stacks](#stacks) & [Queues](#queues) | Binary Search | Recursion |
-| Heaps | Merge Sort | Dynamic Programming |
-| [Vectors / ArrayLists] (#vectors/arraylists) | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
+| [Heaps](#heaps) | Merge Sort | Dynamic Programming |
+| [Vectors / ArrayLists](#vectors-/-arraylists) | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
 | [Hash Tables](#hash-tables) | Union Find | |
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -234,10 +234,30 @@ A graph is a collection of nodes with edges between (some of) them.
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
-<!-- 
+
 ## Heaps
 <hr>
--->
+
+![Min & Max Heap](images/heap.png)
+- Heaps, or binary heaps, can come in either a max-heap or min-heap.
+- It is a complete tree (that is, totally filled other than the rightmost elements on the last
+level) where each node is smaller than the children.
+- The root is either the min or max element in the tree.
+- 2 main operations
+    - Insert
+    ![Heap Insert](images/heapInsert.png)
+        - When inserting an element, you always start at the bottom and right-most spot.
+        - The new element is then swapped with the parent until it is in the appropriate location.
+        - Takes O(N) time
+    - extract_min / extract_max
+    ![Heap Extract](images/heapExtract.png)
+        - Finding the minimum or maximum value is but removing it is tricky.
+        - First, swap the min element with bottommost right element
+        - Resort the list through swaps or "bubble sort" until the element arrives in its correct location
+        - Takes O(log N) time
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Vectors / ArrayLists
 <hr>
 
@@ -398,4 +418,8 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
     - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com) - Ch VI - "Big O"
     - [bigOcheatsheet.com](https://www.bigocheatsheet.com)
     - [Big O Notation \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7)
+
+    <br/>
+
+[Back to Table of Contents](#table-of-contents)
 
