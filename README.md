@@ -7,12 +7,12 @@
 
 | [Data Structures](#data-structures) | [Algorithms](#algorithms) | [Concepts](#concepts) |
 | :---: | :---: | :---: |
-| [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | Bit Manipulation |
-| [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | Memory (Stack vs. Heap) |
-| [Stacks](#stacks) & [Queues](#queues) | Binary Search | Recursion |
-| [Heaps](#heaps) | Merge Sort | Dynamic Programming |
-| [Vectors / ArrayLists](#vectors-/-arraylists) | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
-| [Hash Tables](#hash-tables) | Union Find | |
+| [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | [Bit Manipulation](bit-manipulation) |
+| [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | [Memory](#memory)  |
+| [Stacks](#stacks) & [Queues](#queues) | [Binary Search](#binary-search) | [Recursion](#recursion) |
+| [Heaps](#heaps) | [Merge Sort](#merge-sort) | [Dynamic Programming](dynamic-programming) |
+| [Vectors / ArrayLists](#vectors-/-arraylists) | [Quick Sort](#quick-sort) | [Big O Time & Space](#big-O-time-and-space) |
+| [Hash Tables](#hash-tables) | [Union Find](#union-find) | |
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -213,7 +213,9 @@ A graph is a collection of nodes with edges between (some of) them.
 - No constant-time access.
 - Can be implemented as a linked list *as long as* the items are added and removed from *the same side*.
 - Use Case: Certain recursive algorithms.
-
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Stack Big O](images/stackBigO.png)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -230,7 +232,9 @@ A graph is a collection of nodes with edges between (some of) them.
     - isEmpty(): Return true if and only if the queue is empty.
 - Can be implemented as linked list *as long as* items are added and removed from *opposite sides*.
 - Use Case: Implementing a cache
-
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Heap Big O](images/queueBigO.png)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -283,7 +287,9 @@ level) where each node is smaller than the children.
 - If the number of collisions is very high, then worst case runtime is O(N) where N is the number of keys. Otherwise, lookup time is O(1)
 
 - Can also implement hash table with a balanced binary search tree which gives us O(log N) lookup time and potentially uses less space since we are not allocating space for a large array. Can also iterate through keys in order.
-  
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Heap Big O](images/hashTableBigO.png)
 <br/>
 
 [Back to Table of Contents](#table-of-contents) 
@@ -308,37 +314,65 @@ level) where each node is smaller than the children.
 - Exhaustively explore each branch before moving onto the next one.
 - Is typically recursive and requires a *visited* flag.
 - Simpler to implement than BFS.
+<br/>
 
-<!--
+[Back to Table of Contents](#table-of-contents)
+
 ## Binary Search
 <hr>
 
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Binary Search Tree Big O](images/bstBigO.png)
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Merge Sort
 <hr>
 
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Merge Sort Big O](images/mergesortBigO.png)
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Quick Sort
 <hr>
 
+### Big O
+![Big O Table Header](images/bigOheader.png)
+![Quick Sort Big O](images/quicksortBigO.png)
 <br/>
--->
+
 
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
-# Concepts
-<!--  
+# Concepts  
 ## Bit Manipulation
 <hr>
 
-## Memory (Stack vs. Heap)
-<hr>
+<br/>
 
+[Back to Table of Contents](#table-of-contents)
+## Memory 
+<hr>
+(Stack vs. Heap)
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Recursion
 <hr>
 
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Dynamic Programming
 <hr>
--->
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ### Big O Time and Space
 ![Big O Complexity Chart](images/bigOComplexityChart.png)
 
