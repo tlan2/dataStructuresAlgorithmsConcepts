@@ -5,13 +5,13 @@
 * [About the Project](#about-the-project)
 * [Built With](#built-with)
 
-| [Data Structures](#data-structures) | Algorithms | [Concepts](#concepts) |
+| [Data Structures](#data-structures) | [Algorithms](#algorithms) | [Concepts](#concepts) |
 | :---: | :---: | :---: |
 | [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | Bit Manipulation |
 | [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | Memory (Stack vs. Heap) |
-| Stacks & Queues | Binary Search | Recursion |
+| [Stacks](#stacks) & [Queues](#queues) | Binary Search | Recursion |
 | Heaps | Merge Sort | Dynamic Programming |
-| Vectors / ArrayLists | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
+| [Vectors / ArrayLists] (#vectors/arraylists) | Quick Sort | [Big O Time & Space](#big-O-time-and-space) |
 | [Hash Tables](#hash-tables) | Union Find | |
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -63,7 +63,8 @@ Message is broken down into packets and each packet has a key to the next one.
 ![Linked Lists](images/linkedListBigO.png)
 <br/>
 
- 
+[Back to Table of Contents](#table-of-contents)
+
 ## Trees
 
 ![Tree Diagram](images/trees.png)
@@ -143,6 +144,8 @@ A tree is a data structure composed of nodes that:
 ![Big O Table Header](images/bigOheader.png)
 ![Trees Big O](images/treesBigO.png)
 <br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Tries 
 <hr>
 
@@ -158,6 +161,9 @@ Real-Life Example(s)
 1. Quick prefix lookups - While a hash
 table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
 
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Graphs
 <hr>
 
@@ -188,8 +194,10 @@ A graph is a collection of nodes with edges between (some of) them.
         - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
+<br/>
+<br/>
 
-
+[Back to Table of Contents](#table-of-contents)
 ## Stacks 
 <hr>
 
@@ -205,6 +213,10 @@ A graph is a collection of nodes with edges between (some of) them.
 - No constant-time access.
 - Can be implemented as a linked list *as long as* the items are added and removed from *the same side*.
 - Use Case: Certain recursive algorithms.
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 ## Queues
 <hr>
 
@@ -218,13 +230,27 @@ A graph is a collection of nodes with edges between (some of) them.
     - isEmpty(): Return true if and only if the queue is empty.
 - Can be implemented as linked list *as long as* items are added and removed from *opposite sides*.
 - Use Case: Implementing a cache
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 <!-- 
 ## Heaps
 <hr>
-
+-->
 ## Vectors / ArrayLists
 <hr>
--->
+
+![ArrayList Resizing](images/arrayList.png)
+- Use ArrayLists when you need an array-like structure that dynamically resizes itself with O(1) access.
+- When the array is full, it doubles in size which takes O(N) time.
+- Amortized insertion time is O(1) on average but is O(N) in worst case.
+- Know the name of the ArrayList structure in whatever langauge you are working in. For example, it is called ArrayList in Java. (Arrays are a fixed size in Java.)
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
+
 ## Hash Tables
 <hr> 
 
@@ -238,6 +264,9 @@ A graph is a collection of nodes with edges between (some of) them.
 
 - Can also implement hash table with a balanced binary search tree which gives us O(log N) lookup time and potentially uses less space since we are not allocating space for a large array. Can also iterate through keys in order.
   
+<br/>
+
+[Back to Table of Contents](#table-of-contents) 
 # Algorithms
 ## Breadth-First Search
 <hr>
@@ -247,6 +276,9 @@ A graph is a collection of nodes with edges between (some of) them.
 - BFS is *not* recursive and uses a queue to visit all the neighbors.
 - If you want to find the shortes path between 2 nodes, BFS is generally better.
 - Use Case: Find degrees of separation between two friends or exploring a network of friendships.
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 
 ## Depth-First Search
 <hr>
@@ -269,6 +301,10 @@ A graph is a collection of nodes with edges between (some of) them.
 
 <br/>
 -->
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 # Concepts
 <!--  
 ## Bit Manipulation
@@ -308,11 +344,18 @@ File: *concepts/bigO.apkg* (Anki Deck)
 * Parallel to time complexity
 * An array of size n, requires O(n) space.
     - If 2D array of size n x n, requires O(n^2) space
+
+<br/>
+
+[Back to Table of Contents](#table-of-contents)
 # Contact
 Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Portfolio](https://tlan2.github.io/portfolio/) 
 - [LinkedIn](https://www.linkedin.com/in/thomasmorelancaster/) 
 - [GitHub](https://github.com/tlan2)
+
+<br/>
+
 # Acknowledgements
 ## General
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
