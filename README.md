@@ -369,6 +369,11 @@ level) where each node is smaller than the children.
 <hr>
 
 ![Merge Sort Example](images/mergeSort.png)
+- "Merge sort divides the array in half, sorts each of those halves, and then merges them back together. Each
+of those halves has the same sorting algorithm applied to it." - pg. 146, Cracking the Coding Interview
+- Copies all elements from the target array into a helper array with trackers of the left and right starting point (called helperLeft and helperRight for example.)
+- Time Complexity: O(n log(n)) for average and worst case. Space Complexity: O(n) 
+
 ### Merge Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Merge Sort Big O](images/mergesortBigO.png)
@@ -381,6 +386,9 @@ level) where each node is smaller than the children.
 <hr>
 
 ![Quick Sort Example](images/quickSort.jpg)
+- Quick sort operates by picking a random element *x* and partitioning the array so all the numbers are greater or less than *x*. Partitioning can be performed efficiently through a series of swaps. Repeatedly partitioning the array around an element eventually sorts the array.
+- Since our partitioned element isn't guaranteed to be the median, the worst case runtime is O(n<sup>2</sup>)
+
 ### Quick Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Quick Sort Big O](images/quicksortBigO.png)
@@ -397,6 +405,8 @@ level) where each node is smaller than the children.
 <hr>
 
 ![Bit Manipulation Example](images/bitManipulation.png)
+
+
 ### Resources 
 1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
 <br/>
