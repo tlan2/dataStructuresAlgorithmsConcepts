@@ -58,9 +58,14 @@ Message is broken down into packets and each packet has a key to the next one.
 4. DNA Molecules (Doubly Linked List)
 5. List of website users that need to be emailed an notification
 
-### Big O
+### Linked Lists - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Linked Lists](images/linkedListBigO.png)
+### Linked Lists - Resources 
+1. "How to Implement a Linked List in Java" Article [(freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/) 
+2. "Linked Lists in JavaScript" Article [(codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
+3. Data Structures - Linked Lists Video (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
+4. "What is a practical, real world example of the Linked List?" Article [(stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -140,10 +145,14 @@ A tree is a data structure composed of nodes that:
 * Post-Order
     - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.     
 
-### Big O
+### Trees - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Trees Big O](images/treesBigO.png)
 <br/>
+
+### Trees - Resources 
+1. Data Structures - Trees (by Cracking the Coding Interiew author Gayle McDowell) Video[ (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
+2. "Trees vs. Graphs" Article [(Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
 
 [Back to Table of Contents](#table-of-contents)
 ## Tries 
@@ -160,7 +169,8 @@ Real-Life Example(s)
 
 1. Quick prefix lookups - While a hash
 table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
-
+### Tries - Resources 
+1. Data Structures: Tries (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt&index=16)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -195,6 +205,9 @@ A graph is a collection of nodes with edges between (some of) them.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 <br/>
+### Graphs - Resources 
+1.
+
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -213,9 +226,11 @@ A graph is a collection of nodes with edges between (some of) them.
 - No constant-time access.
 - Can be implemented as a linked list *as long as* the items are added and removed from *the same side*.
 - Use Case: Certain recursive algorithms.
-### Big O
+### Stacks - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Stack Big O](images/stackBigO.png)
+### Stacks - Resources 
+1. Data Structures: Stacks & Queues (by Cracking the Coding Interview author Gayle McDowell)  Video [(YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -232,9 +247,11 @@ A graph is a collection of nodes with edges between (some of) them.
     - isEmpty(): Return true if and only if the queue is empty.
 - Can be implemented as linked list *as long as* items are added and removed from *opposite sides*.
 - Use Case: Implementing a cache
-### Big O
+### Queues - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Heap Big O](images/queueBigO.png)
+### Queues - Resources 
+1. Data Structures: Stacks & Queues (by Cracking the Coding Interview author Gayle McDowell)  Video [(YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -259,6 +276,8 @@ level) where each node is smaller than the children.
         - First, swap the min element with bottommost right element
         - Resort the list through swaps or "bubble sort" until the element arrives in its correct location
         - Takes O(log N) time
+### Heaps -  Resources 
+1. Algorithms: Graph Search, DFS, and BFS Video \(by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w) 
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -270,7 +289,8 @@ level) where each node is smaller than the children.
 - When the array is full, it doubles in size which takes O(N) time.
 - Amortized insertion time is O(1) on average but is O(N) in worst case.
 - Know the name of the ArrayList structure in whatever langauge you are working in. For example, it is called ArrayList in Java. (Arrays are a fixed size in Java.)
-
+### ArrayLists - Resources 
+1. 
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -287,9 +307,11 @@ level) where each node is smaller than the children.
 - If the number of collisions is very high, then worst case runtime is O(N) where N is the number of keys. Otherwise, lookup time is O(1)
 
 - Can also implement hash table with a balanced binary search tree which gives us O(log N) lookup time and potentially uses less space since we are not allocating space for a large array. Can also iterate through keys in order.
-### Big O
+### Hash Table - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Heap Big O](images/hashTableBigO.png)
+### Hash Table - Resources 
+1. Data Structures: Hash Tables (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=5)
 <br/>
 
 [Back to Table of Contents](#table-of-contents) 
@@ -302,6 +324,8 @@ level) where each node is smaller than the children.
 - BFS is *not* recursive and uses a queue to visit all the neighbors.
 - If you want to find the shortes path between 2 nodes, BFS is generally better.
 - Use Case: Find degrees of separation between two friends or exploring a network of friendships.
+### BFS - Resources 
+1. Algorithms: Graph Search, DFS, and BFS by Cracking the Coding Interview author Gayle McDowell [(YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -314,6 +338,9 @@ level) where each node is smaller than the children.
 - Exhaustively explore each branch before moving onto the next one.
 - Is typically recursive and requires a *visited* flag.
 - Simpler to implement than BFS.
+### DFS - Resources 
+1. Algorithms: Graph Search, DFS, and BFS by Cracking the Coding Interview author Gayle McDowell [(YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
+
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -321,27 +348,36 @@ level) where each node is smaller than the children.
 ## Binary Search
 <hr>
 
-### Big O
+- In a sorted array, binary search compares an element *x* at the midpoint of the array. If *x* is greater than the midpoint value, then find the midpoint of the right side and compare again. If *x* is less than the midpoint, find the midpoint of the left side and compare again. Do this repeatedly until you find your targeted value. 
+
+### Binary Search Tree - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Binary Search Tree Big O](images/bstBigO.png)
 <br/>
+
+### Binary Search Resources 
+1. Algorithms: Binary Search by Cracking the Coding Interview author Gayle McDowell [(YouTube)](https://www.youtube.com/watch?v=P3YID7liBug&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=27)
 
 [Back to Table of Contents](#table-of-contents)
 ## Merge Sort
 <hr>
 
-### Big O
+### Merge Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Merge Sort Big O](images/mergesortBigO.png)
+### Merge Sort - Resources 
+1. Algorithms: Merge Sort (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=KF2j-9iSf4Q&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=20)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
 ## Quick Sort
 <hr>
 
-### Big O
+### Quick Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Quick Sort Big O](images/quicksortBigO.png)
+### Resources 
+1. Algorithms: Quicksort (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=SLauY6PpjW4&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=21)
 <br/>
 
 
@@ -352,24 +388,33 @@ level) where each node is smaller than the children.
 ## Bit Manipulation
 <hr>
 
+### Resources 
+1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
 ## Memory 
 <hr>
 (Stack vs. Heap)
+
+### Resources 
+1.  
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
 ## Recursion
 <hr>
 
+### Resources 
+1. Algorithms: Recursion (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
 ## Dynamic Programming
 <hr>
 
+### Resources 
+1. Algorithms: Memoization and Dynamic Programming by Cracking the Coding Interview author Gayle McDowell Video [(YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -399,6 +444,9 @@ File: *concepts/bigO.apkg* (Anki Deck)
 * An array of size n, requires O(n) space.
     - If 2D array of size n x n, requires O(n^2) space
 
+### Resources 
+1. Big O Notation (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7)
+2. [bigOcheatsheet.com](https://www.bigocheatsheet.com)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -411,49 +459,11 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 <br/>
 
 # Acknowledgements
-## General
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
-## Data Structures
-* Linked Lists
-    - [How to Implement a Linked List in Java  (freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/)
-    - [Linked Lists in JavaScript (codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
-    - [Data Structures - Linked Lists  \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
-    - [What is a practical, real world example of the Linked List? (stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
-* Trees, Tries, & Graphs
-    - [Data Structures - Trees \[by Cracking the Coding Interiew author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
-    - [Trees vs. Graphs (Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
-    - [Data Structures: Tries \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt&index=16)
-* Stacks & Queues
-    - [Data Structures: Stacks & Queues \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
-* Heaps
-    - [Algorithms: Graph Search, DFS, and BFS \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
-* Vectors / ArrayLists
-* Hash Tables
-    - [Data Structures: Hash Tables \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=5)
-## Algorithms
-* Breadth-First Search
-* Depth-First Search
-    - [Algorithms: Graph Search, DFS, and BFS \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
-* Binary Search
-    - [Algorithms: Binary Search \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=P3YID7liBug&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=27)
-* Merge Sort
-    - [Algorithms: Merge Sort \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=KF2j-9iSf4Q&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=20)
-* Quick Sort
-    - [Algorithms: Quicksort \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=SLauY6PpjW4&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=21)
-## Concepts
-* Bit Manipulation
-    - [Data Structures: Heaps \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
-* Memory (Stack vs. Heap)
-* Recursion
-    - [Algorithms: Recursion \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
-* Dynamic Programming
-    - [Algorithms: Memoization and Dynamic Programming \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
-* Big O Time & Space
-    - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com) - Ch VI - "Big O"
-    - [bigOcheatsheet.com](https://www.bigocheatsheet.com)
-    - [Big O Notation \[by Cracking the Coding Interview author Gayle McDowell\] (YouTube)](https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7)
+- [Data Structures Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX)
+- [Algorithms Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL)
 
-    <br/>
+<br/>
 
 [Back to Table of Contents](#table-of-contents)
 
