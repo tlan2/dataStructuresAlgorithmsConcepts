@@ -17,7 +17,7 @@
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project
-In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am coding all listed concepts in the table above from scratch.
+In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am reviewing and coding all listed concepts in the table above from scratch.
 
 ## Built With
 * [JavaScript (Wikipedia)](https://en.wikipedia.org/wiki/JavaScript)
@@ -112,7 +112,7 @@ A tree is a data structure composed of nodes that:
    
 * **Balanced / Unbalanced Tree**:
      
-     ![Balanced / Unbalanced Trees](images/balancedUnbalancedTree.png)
+     ![Balanced / Unbalanced Trees](images/balancedUnbalancedtree.png)
 
     Balanced tree means something more like “not terribly imbalance.” It is balanced enough to ensure *O(log n)* insert and find times.
     *Note: In interviews, assume you have a balanced tree.*
@@ -144,6 +144,8 @@ A tree is a data structure composed of nodes that:
     - Pre-order traversal visits the current node before its child nodes (hence the name "pre-order"). 
 * Post-Order
     - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.     
+
+### Real-Life Examples
 
 ### Trees - Big O
 ![Big O Table Header](images/bigOheader.png)
@@ -348,7 +350,11 @@ level) where each node is smaller than the children.
 ## Binary Search
 <hr>
 
-- In a sorted array, binary search compares an element *x* at the midpoint of the array. If *x* is greater than the midpoint value, then find the midpoint of the right side and compare again. If *x* is less than the midpoint, find the midpoint of the left side and compare again. Do this repeatedly until you find your targeted value. 
+![Binary Search Example](images/binarySearch.png)
+- Must always operate on something that is sorted such as a sorted array. 
+- In a sorted array, binary search compares an element *x* at the midpoint of the array. If *x* is greater than the midpoint value, then find the midpoint of the right side and compare again. If *x* is less than the midpoint, find the midpoint of the left side and compare again. Do this repeatedly until you find your targeted value.
+- Is O(log N).
+- 
 
 ### Binary Search Tree - Big O
 ![Big O Table Header](images/bigOheader.png)
@@ -362,6 +368,7 @@ level) where each node is smaller than the children.
 ## Merge Sort
 <hr>
 
+![Merge Sort Example](images/mergeSort.png)
 ### Merge Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Merge Sort Big O](images/mergesortBigO.png)
@@ -373,6 +380,7 @@ level) where each node is smaller than the children.
 ## Quick Sort
 <hr>
 
+![Quick Sort Example](images/quickSort.jpg)
 ### Quick Sort - Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Quick Sort Big O](images/quicksortBigO.png)
@@ -388,6 +396,7 @@ level) where each node is smaller than the children.
 ## Bit Manipulation
 <hr>
 
+![Bit Manipulation Example](images/bitManipulation.png)
 ### Resources 
 1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
 <br/>
@@ -395,6 +404,8 @@ level) where each node is smaller than the children.
 [Back to Table of Contents](#table-of-contents)
 ## Memory 
 <hr>
+
+![Stack vs. Heap Example](images/stackHeap.gif)
 (Stack vs. Heap)
 
 ### Resources 
@@ -405,6 +416,8 @@ level) where each node is smaller than the children.
 ## Recursion
 <hr>
 
+![Recursion Example](images/recursion.png)
+
 ### Resources 
 1. Algorithms: Recursion (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
 <br/>
@@ -413,6 +426,7 @@ level) where each node is smaller than the children.
 ## Dynamic Programming
 <hr>
 
+![Recursion Example](images/dynamicProgramming.png)
 ### Resources 
 1. Algorithms: Memoization and Dynamic Programming by Cracking the Coding Interview author Gayle McDowell Video [(YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
 <br/>
@@ -455,8 +469,6 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Portfolio](https://tlan2.github.io/portfolio/) 
 - [LinkedIn](https://www.linkedin.com/in/thomasmorelancaster/) 
 - [GitHub](https://github.com/tlan2)
-
-<br/>
 
 # Acknowledgements
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
