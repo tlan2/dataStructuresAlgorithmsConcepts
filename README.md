@@ -207,6 +207,7 @@ A graph is a collection of nodes with edges between (some of) them.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 <br/>
+
 ### Graphs - Resources 
 1.
 
@@ -407,7 +408,26 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 ![Bit Manipulation Example](images/bitManipulation.png)
 
+- Bit Facts and Tricks
+![Bit Rules](images/bitRules.png)
+- Two's Complement
+    - The first bit decides whether a number is positive or negative. If the first number is 1 then it is positive and if it is 0 then it is negative.
+    - Computers typically store integers in two's complement representation.
+    - There are two ways to find a negative number:
+        1. The two's complement of an N-bit number (where N is the number of bits used for the number, excluding the sign bit) is the complement of the number with respect to 2<sup>N</sup>.
+            - Example: Let's look at the 4-bit integer -3. If it's a 4-bit number, we have one bit for the sign and three bits for the value. We want the complement with respect to 2<sup>3</sup> which is 8. The complement of 3 (the absolute value of -3) with respect to 8 is 5. 5 in binary is 101. Therefore, -3 in binary as a 4-bit number is 1101, with the first bit being the sign bit
+        2. Invert the bits in the positive representation, and then add 1. 
+            - Example: 3 is 011 in binary. Flip the bits to get 100, add 1 to get 101, then prepend the sign bit (1) to get 1101.
 
+![Positive & Negative Numbers Chart](images/bitChart.png)
+
+- Shifts
+    - Left shift (<<<) generally multiplies a number by 2 and an arithmetic right shift generally divides a number by 2.
+    - Arithmetic vs. Logical Right Shift 
+        - Logical right shift adds a 0 to the front of the binary number.  It is represented as >>>.
+        ![Logical Right Shift](images/logicalRightShift.png)
+        - Arithmetic right shift adds a 1 to the front the binary number. It is represented as >>.
+        ![Arithmetic Right Shift](images/arithmeticRightShift.png)
 ### Resources 
 1. Algorithms: Bit Manipulatoin (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=NLKQEOgBAnw&t=64s)
 <br/>
@@ -417,10 +437,48 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 <hr>
 
 ![Stack vs. Heap Example](images/stackHeap.gif)
-(Stack vs. Heap)
+- Stack Allocation
+    - Contiguous blocks of memory
+    - Size to be allocated is known to compiler and whenever the method is called, its variables get memory allocated on the stack.
+    - Whenever the method is finished, the memory is automatically flushed or deallocated.
+    - Is safer because it can only be accessed by owner thread.
+    - Faster than Heap-memory allocation
+    - Has less storage space than Heap-memory
+- Heap Allocation
+    - Called heap because it is a pile of memory space available to programmers to allocate and de-allocate.
+    - Not thread-safe. Data is visible/accessible by all threads
+    - If not handled well by the programmer, then a memory leak can happen to the program. 
+    - Divided into 3 categories:
+        1. Younger Generation - portion of memory for all new data (objects). When filled, the rest of the data is stored in Garbage collection.
+        2. Old/Tenured Generation - Contains older data objects that aren't in frequent use or not in use at all.
+        3. Permanent Generation - Contains JVM's metadata for the runtime classes and application methods
+    - Garbage collector needed to remove old unused objects since it isn't automatically removed and to use the space more efficiently.
+    - Space is quite larger than the stack
+    - Exists as long the whole application runs
+- Key Differences
+    - Automatic allocation & deallocation 
+        - Stack - Done by compiler.
+        - Heap - Manually handled by programmer
+    - Cost
+        - Stack - Less
+        - Heap - More
+    - Problems
+        - Stack - Memory Shortage
+        - Heap - Fragmentation
+    - Cache
+        - Stack - Cache-friendly since it has small region of memory
+        - Heap - Not cache-friendly since memory is dispersed throughout the memory and is therefore more likely to cause cache misses.
+    - Flexibility
+        - Stack - Not flexible since memory size cannot be changed.
+        - Heap - Flexible and alloted memory can be altered
+    - Access Time
+        - Stack - Quicker since contiguous
+        - Heap - Slower since more spread out
+- Summary Comparison Chart from GeeksforGeeks
+![Stack vs. Heap Comparison Chart](images/stackHeapComparisonChart.png)
 
 ### Resources 
-1.  
+1. "Stack vs Heap Memory Allocation" Article [(geeksforgeeks.org}](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
