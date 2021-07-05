@@ -7,10 +7,10 @@
 
 | [Data Structures](#data-structures) | [Algorithms](#algorithms) | [Concepts](#concepts) |
 | :---: | :---: | :---: |
-| [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | [Bit Manipulation](bit-manipulation) |
+| [Linked Lists](#linked-lists) | [Breadth-First Search](#breadth-first-search) | [Bit Manipulation](#bit-manipulation) |
 | [Trees](#trees), [Tries](#tries), & [Graphs](#graphs) | [Depth-First Search](#depth-first-search) | [Memory](#memory)  |
 | [Stacks](#stacks) & [Queues](#queues) | [Binary Search](#binary-search) | [Recursion](#recursion) |
-| [Heaps](#heaps) | [Merge Sort](#merge-sort) | [Dynamic Programming](dynamic-programming) |
+| [Heaps](#heaps) | [Merge Sort](#merge-sort) | [Dynamic Programming](#dynamic-programming) |
 | [Vectors / ArrayLists](#vectors-/-arraylists) | [Quick Sort](#quick-sort) | [Big O Time & Space](#big-O-time-and-space) |
 | [Hash Tables](#hash-tables) | [Union Find](#union-find) | |
 * [Contact](#contact)
@@ -279,7 +279,8 @@ level) where each node is smaller than the children.
         - Resort the list through swaps or "bubble sort" until the element arrives in its correct location
         - Takes O(log N) time
 ### Heaps -  Resources 
-1. Algorithms: Graph Search, DFS, and BFS Video \(by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w) 
+1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11) 
+
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -408,7 +409,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 
 ### Resources 
-1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11)
+1. Algorithms: Bit Manipulatoin (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=NLKQEOgBAnw&t=64s)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
