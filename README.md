@@ -158,7 +158,6 @@ A tree is a data structure composed of nodes that:
 
 [Back to Table of Contents](#table-of-contents)
 ## Tries 
-<hr>
 
 ![Tries Example](images/tries.png)
 - A trie (sometimes called a prefix tree) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may
@@ -177,7 +176,6 @@ table can quickly look up whether a string is a valid word, it cannot tell us if
 
 [Back to Table of Contents](#table-of-contents)
 ## Graphs
-<hr>
 
 A graph is a collection of nodes with edges between (some of) them.
 <br/>
@@ -215,7 +213,6 @@ A graph is a collection of nodes with edges between (some of) them.
 
 [Back to Table of Contents](#table-of-contents)
 ## Stacks 
-<hr>
 
 ![Stack Example](images/stackExample.png)
 - A stack is a stack of data.
@@ -238,7 +235,6 @@ A graph is a collection of nodes with edges between (some of) them.
 
 [Back to Table of Contents](#table-of-contents)
 ## Queues
-<hr>
 
 ![Queue Example](images/queue.png)
 
@@ -260,7 +256,6 @@ A graph is a collection of nodes with edges between (some of) them.
 [Back to Table of Contents](#table-of-contents)
 
 ## Heaps
-<hr>
 
 ![Min & Max Heap](images/heap.png)
 - Heaps, or binary heaps, can come in either a max-heap or min-heap.
@@ -286,7 +281,6 @@ level) where each node is smaller than the children.
 
 [Back to Table of Contents](#table-of-contents)
 ## Vectors / ArrayLists
-<hr>
 
 ![ArrayList Resizing](images/arrayList.png)
 - Use ArrayLists when you need an array-like structure that dynamically resizes itself with O(1) access.
@@ -300,7 +294,6 @@ level) where each node is smaller than the children.
 [Back to Table of Contents](#table-of-contents)
 
 ## Hash Tables
-<hr> 
 
 ![Hash Table Example](images/hashTable.png)
 - A data structure that mapes keys to values for highly efficient lookups
@@ -321,7 +314,6 @@ level) where each node is smaller than the children.
 [Back to Table of Contents](#table-of-contents) 
 # Algorithms
 ## Breadth-First Search
-<hr>
 
 ![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
 - BFS starts at the root and explores each neighbor before going o nto any of their children. We go wide (hence *breadth*-first search) before we go deep.
@@ -335,7 +327,6 @@ level) where each node is smaller than the children.
 [Back to Table of Contents](#table-of-contents)
 
 ## Depth-First Search
-<hr>
 
 ![DFS Example](images/dfs.png)
 - DFS preferred if you want to visit every node in the graph.
@@ -350,7 +341,6 @@ level) where each node is smaller than the children.
 [Back to Table of Contents](#table-of-contents)
 
 ## Binary Search
-<hr>
 
 ![Binary Search Example](images/binarySearch.png)
 - Must always operate on something that is sorted such as a sorted array. 
@@ -368,7 +358,6 @@ level) where each node is smaller than the children.
 
 [Back to Table of Contents](#table-of-contents)
 ## Merge Sort
-<hr>
 
 ![Merge Sort Example](images/mergeSort.png)
 - "Merge sort divides the array in half, sorts each of those halves, and then merges them back together. Each
@@ -385,7 +374,6 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 [Back to Table of Contents](#table-of-contents)
 ## Quick Sort
-<hr>
 
 ![Quick Sort Example](images/quickSort.jpg)
 - Quick sort operates by picking a random element *x* and partitioning the array so all the numbers are greater or less than *x*. Partitioning can be performed efficiently through a series of swaps. Repeatedly partitioning the array around an element eventually sorts the array.
@@ -399,12 +387,10 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 <br/>
 
 
-<br/>
 
 [Back to Table of Contents](#table-of-contents)
 # Concepts  
 ## Bit Manipulation
-<hr>
 
 ![Bit Manipulation Example](images/bitManipulation.png)
 
@@ -434,7 +420,6 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 [Back to Table of Contents](#table-of-contents)
 ## Memory 
-<hr>
 
 ![Stack vs. Heap Example](images/stackHeap.gif)
 - Stack Allocation
@@ -483,9 +468,30 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 [Back to Table of Contents](#table-of-contents)
 ## Recursion
-<hr>
 
 ![Recursion Example](images/recursion.png)
+- Statements that indicate it is good candidate for recursion:
+    - "Design an algorithm to compute the nth..."
+    - "Write code to list the first n....."
+    - "Implement a method to compute all..."
+- Recursive solutoins are built off of solution to subproblems.
+- 3 most common approaches to develop a recursive algorithm are:
+    1. Bottom-Up Approach
+    <br>
+    Start with solving a simple case such as a list with 1 element and then think about how you can *build* the solution for one case off the previous case.
+    2. Top-Down Approach
+    <br>
+    In this approach we think about how we can divide the problem for case N into subproblems. Be careful of overlap between cases.
+    3. Half-and-Half Approach
+    <br>
+    This approach divides the data in half.
+    <br>
+    Examples:
+        1. Binary Search
+            - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
+        2. Merge Sort
+            - Sort each half of the array and then merge the sorted halves.
+    - Can be very space inefficient. Each recursive call adds a new layer to the [stack](#memory), which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. 
 
 ### Resources 
 1. Algorithms: Recursion (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
@@ -493,9 +499,10 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 [Back to Table of Contents](#table-of-contents)
 ## Dynamic Programming
-<hr>
 
 ![Recursion Example](images/dynamicProgramming.png)
+
+- 
 ### Resources 
 1. Algorithms: Memoization and Dynamic Programming by Cracking the Coding Interview author Gayle McDowell Video [(YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
 <br/>
