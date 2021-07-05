@@ -13,7 +13,7 @@
 | [Heaps](#heaps) | [Merge Sort](#merge-sort) | [Dynamic Programming](#dynamic-programming) |
 | [Vectors / ArrayLists](#vectors-/-arraylists) | [Quick Sort](#quick-sort) | [Big O Time & Space](#big-O-time-and-space) |
 | [Hash Tables](#hash-tables) | [Union Find](#union-find) | |
-<br>
+
 * [Additional Interview Prep Videos](#additional-interview-prep-videos)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -357,8 +357,6 @@ File: **
 - Must always operate on something that is sorted such as a sorted array. 
 - In a sorted array, binary search compares an element *x* at the midpoint of the array. If *x* is greater than the midpoint value, then find the midpoint of the right side and compare again. If *x* is less than the midpoint, find the midpoint of the left side and compare again. Do this repeatedly until you find your targeted value.
 - Is O(log N).
-- 
-
 ### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Binary Search Tree Big O](images/bstBigO.png)
@@ -408,6 +406,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 
 - Bit Facts and Tricks
 <br>
+
 ![Bit Rules](images/bitRules.png)
 File: **
 - Two's Complement
