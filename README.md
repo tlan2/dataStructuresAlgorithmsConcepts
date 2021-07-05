@@ -13,6 +13,8 @@
 | [Heaps](#heaps) | [Merge Sort](#merge-sort) | [Dynamic Programming](#dynamic-programming) |
 | [Vectors / ArrayLists](#vectors-/-arraylists) | [Quick Sort](#quick-sort) | [Big O Time & Space](#big-O-time-and-space) |
 | [Hash Tables](#hash-tables) | [Union Find](#union-find) | |
+<br>
+* [Additional Interview Prep Videos](#additional-interview-prep-videos)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
@@ -34,7 +36,7 @@ Circular Linked List
 
 ![Circular Linked List](images/circularLinkedList.jpg)
 
-File: *dataStructures/linkedLists.js* 
+File: *[dataStructures/linkedLists.js](dataStructures/singlyLinkedList.js)*
 
 A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.
 <br/>
@@ -58,10 +60,10 @@ Message is broken down into packets and each packet has a key to the next one.
 4. DNA Molecules (Doubly Linked List)
 5. List of website users that need to be emailed an notification
 
-### Linked Lists - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Linked Lists](images/linkedListBigO.png)
-### Linked Lists - Resources 
+### Resources 
 1. "How to Implement a Linked List in Java" Article [(freecodecamp.com)](https://www.freecodecamp.org/news/implementing-a-linked-list-in-javascript/) 
 2. "Linked Lists in JavaScript" Article [(codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 3. Data Structures - Linked Lists Video (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
@@ -74,7 +76,7 @@ Message is broken down into packets and each packet has a key to the next one.
 
 ![Tree Diagram](images/trees.png)
 
-File: *dataStructures/binarySearchTree.js*
+File: **
 
 Report: *[Final Project Report](https://drive.google.com/file/d/15tfnANoty4ZpfQTqUiNw9XIQhUfkCtN-/view)* on B-trees, Red-Black trees, and Binary Search trees for Graduate Algorithms Course
 
@@ -147,12 +149,12 @@ A tree is a data structure composed of nodes that:
 
 ### Real-Life Examples
 
-### Trees - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Trees Big O](images/treesBigO.png)
 <br/>
 
-### Trees - Resources 
+### Resources 
 1. Data Structures - Trees (by Cracking the Coding Interiew author Gayle McDowell) Video[ (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
 2. "Trees vs. Graphs" Article [(Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
 
@@ -160,22 +162,25 @@ A tree is a data structure composed of nodes that:
 ## Tries 
 
 ![Tries Example](images/tries.png)
+File: **
 - A trie (sometimes called a prefix tree) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may
 represent a word.
 - The * nodes (sometimes called "null nodes") are often used to indicate complete words. For example, the fact that there is a * node under MANY indicates that MANY is a complete word. The existence of the MA path indicates there are words that start with MA. 
 - In situations when we search
 through the tree on related prefixes repeatedly (e.g., looking up M, then MA, then MAN, then MANY), we might pass around a reference to the current node in the tree. This will allow us to just check if Y is a child of MAN, rather than starting from the root each time. 
 
-Real-Life Example(s)
+### Real-Life Example(s)
 
 1. Quick prefix lookups - While a hash
 table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
-### Tries - Resources 
+### Resources 
 1. Data Structures: Tries (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLX6IKgS15Ue02WDPRCmYKuZicQHit9kFt&index=16)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
 ## Graphs
+
+File: **
 
 A graph is a collection of nodes with edges between (some of) them.
 <br/>
@@ -206,7 +211,7 @@ A graph is a collection of nodes with edges between (some of) them.
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 <br/>
 
-### Graphs - Resources 
+### Resources 
 1.
 
 <br/>
@@ -215,6 +220,7 @@ A graph is a collection of nodes with edges between (some of) them.
 ## Stacks 
 
 ![Stack Example](images/stackExample.png)
+File: **
 - A stack is a stack of data.
 - Uses last-in first-out (LIFO) ordering. For example, the most recent dinner plate put on the stack is the first item to be removed.
 - Operations:
@@ -226,10 +232,10 @@ A graph is a collection of nodes with edges between (some of) them.
 - No constant-time access.
 - Can be implemented as a linked list *as long as* the items are added and removed from *the same side*.
 - Use Case: Certain recursive algorithms.
-### Stacks - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Stack Big O](images/stackBigO.png)
-### Stacks - Resources 
+### Resources 
 1. Data Structures: Stacks & Queues (by Cracking the Coding Interview author Gayle McDowell)  Video [(YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
 <br/>
 
@@ -237,7 +243,7 @@ A graph is a collection of nodes with edges between (some of) them.
 ## Queues
 
 ![Queue Example](images/queue.png)
-
+File: **
 - With a queue, items are removed from the data structure in the same order that they are added which is FIFO (first-in first-out) ordering.
 - Operations:
     - add(item): Add an item to the end of the list.
@@ -246,10 +252,10 @@ A graph is a collection of nodes with edges between (some of) them.
     - isEmpty(): Return true if and only if the queue is empty.
 - Can be implemented as linked list *as long as* items are added and removed from *opposite sides*.
 - Use Case: Implementing a cache
-### Queues - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Heap Big O](images/queueBigO.png)
-### Queues - Resources 
+### Resources 
 1. Data Structures: Stacks & Queues (by Cracking the Coding Interview author Gayle McDowell)  Video [(YouTube)](https://www.youtube.com/watch?v=wjI1WNcIntg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=31)
 <br/>
 
@@ -258,6 +264,7 @@ A graph is a collection of nodes with edges between (some of) them.
 ## Heaps
 
 ![Min & Max Heap](images/heap.png)
+File: **
 - Heaps, or binary heaps, can come in either a max-heap or min-heap.
 - It is a complete tree (that is, totally filled other than the rightmost elements on the last
 level) where each node is smaller than the children.
@@ -274,7 +281,7 @@ level) where each node is smaller than the children.
         - First, swap the min element with bottommost right element
         - Resort the list through swaps or "bubble sort" until the element arrives in its correct location
         - Takes O(log N) time
-### Heaps -  Resources 
+### Resources 
 1. Data Structures: Heaps (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=t0Cq6tVNRBA&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=11) 
 
 <br/>
@@ -283,11 +290,12 @@ level) where each node is smaller than the children.
 ## Vectors / ArrayLists
 
 ![ArrayList Resizing](images/arrayList.png)
+File: **
 - Use ArrayLists when you need an array-like structure that dynamically resizes itself with O(1) access.
 - When the array is full, it doubles in size which takes O(N) time.
 - Amortized insertion time is O(1) on average but is O(N) in worst case.
 - Know the name of the ArrayList structure in whatever langauge you are working in. For example, it is called ArrayList in Java. (Arrays are a fixed size in Java.)
-### ArrayLists - Resources 
+### Resources 
 1. 
 <br/>
 
@@ -296,6 +304,7 @@ level) where each node is smaller than the children.
 ## Hash Tables
 
 ![Hash Table Example](images/hashTable.png)
+File: **
 - A data structure that mapes keys to values for highly efficient lookups
 - Example Simple Yet Common Implementation:
     1. Computer the hash code which is usually an *int* or *long*.
@@ -304,10 +313,10 @@ level) where each node is smaller than the children.
 - If the number of collisions is very high, then worst case runtime is O(N) where N is the number of keys. Otherwise, lookup time is O(1)
 
 - Can also implement hash table with a balanced binary search tree which gives us O(log N) lookup time and potentially uses less space since we are not allocating space for a large array. Can also iterate through keys in order.
-### Hash Table - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Heap Big O](images/hashTableBigO.png)
-### Hash Table - Resources 
+### Resources 
 1. Data Structures: Hash Tables (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=shs0KM3wKv8&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=5)
 <br/>
 
@@ -316,6 +325,7 @@ level) where each node is smaller than the children.
 ## Breadth-First Search
 
 ![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
+File: **
 - BFS starts at the root and explores each neighbor before going o nto any of their children. We go wide (hence *breadth*-first search) before we go deep.
 - BFS is *not* recursive and uses a queue to visit all the neighbors.
 - If you want to find the shortes path between 2 nodes, BFS is generally better.
@@ -329,11 +339,12 @@ level) where each node is smaller than the children.
 ## Depth-First Search
 
 ![DFS Example](images/dfs.png)
+File: **
 - DFS preferred if you want to visit every node in the graph.
 - Exhaustively explore each branch before moving onto the next one.
 - Is typically recursive and requires a *visited* flag.
 - Simpler to implement than BFS.
-### DFS - Resources 
+### Resources 
 1. Algorithms: Graph Search, DFS, and BFS by Cracking the Coding Interview author Gayle McDowell [(YouTube)](https://www.youtube.com/watch?v=zaBhtODEL0w)
 
 <br/>
@@ -348,27 +359,28 @@ level) where each node is smaller than the children.
 - Is O(log N).
 - 
 
-### Binary Search Tree - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Binary Search Tree Big O](images/bstBigO.png)
 <br/>
 
-### Binary Search Resources 
+### Resources 
 1. Algorithms: Binary Search by Cracking the Coding Interview author Gayle McDowell [(YouTube)](https://www.youtube.com/watch?v=P3YID7liBug&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=27)
 
 [Back to Table of Contents](#table-of-contents)
 ## Merge Sort
 
 ![Merge Sort Example](images/mergeSort.png)
+File: **
 - "Merge sort divides the array in half, sorts each of those halves, and then merges them back together. Each
 of those halves has the same sorting algorithm applied to it." - pg. 146, Cracking the Coding Interview
 - Copies all elements from the target array into a helper array with trackers of the left and right starting point (called helperLeft and helperRight for example.)
 - Time Complexity: O(n log(n)) for average and worst case. Space Complexity: O(n) 
 
-### Merge Sort - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Merge Sort Big O](images/mergesortBigO.png)
-### Merge Sort - Resources 
+### Resources 
 1. Algorithms: Merge Sort (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=KF2j-9iSf4Q&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=20)
 <br/>
 
@@ -379,7 +391,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 - Quick sort operates by picking a random element *x* and partitioning the array so all the numbers are greater or less than *x*. Partitioning can be performed efficiently through a series of swaps. Repeatedly partitioning the array around an element eventually sorts the array.
 - Since our partitioned element isn't guaranteed to be the median, the worst case runtime is O(n<sup>2</sup>)
 
-### Quick Sort - Big O
+### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Quick Sort Big O](images/quicksortBigO.png)
 ### Resources 
@@ -395,7 +407,9 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 ![Bit Manipulation Example](images/bitManipulation.png)
 
 - Bit Facts and Tricks
+<br>
 ![Bit Rules](images/bitRules.png)
+File: **
 - Two's Complement
     - The first bit decides whether a number is positive or negative. If the first number is 1 then it is positive and if it is 0 then it is negative.
     - Computers typically store integers in two's complement representation.
@@ -405,7 +419,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
         2. Invert the bits in the positive representation, and then add 1. 
             - Example: 3 is 011 in binary. Flip the bits to get 100, add 1 to get 101, then prepend the sign bit (1) to get 1101.
 
-![Positive & Negative Numbers Chart](images/bitChart.png)
+    ![Positive & Negative Numbers Chart](images/bitChart.png)
 
 - Shifts
     - Left shift (<<<) generally multiplies a number by 2 and an arithmetic right shift generally divides a number by 2.
@@ -422,6 +436,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 ## Memory 
 
 ![Stack vs. Heap Example](images/stackHeap.gif)
+File: **
 - Stack Allocation
     - Contiguous blocks of memory
     - Size to be allocated is known to compiler and whenever the method is called, its variables get memory allocated on the stack.
@@ -470,6 +485,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 ## Recursion
 
 ![Recursion Example](images/recursion.png)
+File: **
 - Statements that indicate it is good candidate for recursion:
     - "Design an algorithm to compute the nth..."
     - "Write code to list the first n....."
@@ -501,6 +517,7 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 ## Dynamic Programming
 
 ![Recursion Example](images/dynamicProgramming.png)
+File: **
 
 - 
 ### Resources 
@@ -540,6 +557,11 @@ File: *concepts/bigO.apkg* (Anki Deck)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
+## Additional Interview Prep Videos
+1. 7 Steps to Solve Algorithm Problems (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=GKgAVjJxh9w&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=2)
+2. 3 Algorithm Strategies (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=84UYVCluClQ&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=3)
+3. How to Approach Behavioral Questions (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=tZxNNKqxXnw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=4)
+4. How Companies Evaluate Technical Interviews (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=jxAWQN5t6wg&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=5)
 # Contact
 Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Portfolio](https://tlan2.github.io/portfolio/) 
