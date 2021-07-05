@@ -515,12 +515,17 @@ File: **
 [Back to Table of Contents](#table-of-contents)
 ## Dynamic Programming
 
-![Recursion Example](images/dynamicProgramming.png)
+![Dynamic Programming Example](images/dynamicProgramming.png)
 File: **
 
-- 
+- Is a recursive algorithm that finds the overlapping subproblems and caches the results for future recursive calls.
+- Memoization is the top-down dynamic programming approach.
+- Tabulation is the bottom-up dynamic programming approach which avoids recursion.
+    - Normally solve problems "bottom-up" by creating test input-output case
+
 ### Resources 
 1. Algorithms: Memoization and Dynamic Programming by Cracking the Coding Interview author Gayle McDowell Video [(YouTube)](https://www.youtube.com/watch?v=P8Xa2BitN3I&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=14)
+2. "What is Dynamic Programming?" Articel [(educative.io)](https://www.educative.io/courses/grokking-dynamic-programming-patterns-for-coding-interviews/m2G1pAq0OO0)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
