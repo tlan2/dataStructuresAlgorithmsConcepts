@@ -196,6 +196,7 @@ A graph is a collection of nodes with edges between (some of) them.
 ![Subgraph](images/subgraph.png)
 - A graph can have cycles. An "acyclic graph" is one without cycles.
 <br/>
+
 ![Graph w/ cycle & Acyclic Graph](images/cyclicAcyclicGraphs.png)
 - Programmatically, there are two common ways to represent a graph:
     1. Adjacency List
@@ -500,11 +501,11 @@ In this approach we think about how we can divide the problem for case N into su
 3. Half-and-Half Approach
 This approach divides the data in half.
 
-Examples:
     1. Binary Search
         - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
     2. Merge Sort
         - Sort each half of the array and then merge the sorted halves.
+
 - Can be very space inefficient. Each recursive call adds a new layer to the [stack](#memory), which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. 
 
 ### Resources 
