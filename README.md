@@ -494,15 +494,16 @@ File: **
 1. Bottom-Up Approach
 <br>
 Start with solving a simple case such as a list with 1 element and then think about how you can *build* the solution for one case off the previous case.
+
 2. Top-Down Approach
 <br>
 In this approach we think about how we can divide the problem for case N into subproblems. Be careful of overlap between cases.
+
 3. Half-and-Half Approach
 <br>
 This approach divides the data in half.
 <br>
 Examples:
-
     1. Binary Search
         - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
     2. Merge Sort
