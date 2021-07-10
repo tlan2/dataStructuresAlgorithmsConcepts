@@ -502,11 +502,13 @@ File: **
     This approach divides the data in half.
     <br>
     Examples:
+
         1. Binary Search
             - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
         2. Merge Sort
             - Sort each half of the array and then merge the sorted halves.
-    - Can be very space inefficient. Each recursive call adds a new layer to the [stack](#memory), which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. 
+
+- Can be very space inefficient. Each recursive call adds a new layer to the [stack](#memory), which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. 
 
 ### Resources 
 1. Algorithms: Recursion (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
