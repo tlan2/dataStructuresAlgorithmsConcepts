@@ -491,22 +491,22 @@ File: **
     - "Implement a method to compute all..."
 - Recursive solutoins are built off of solution to subproblems.
 - 3 most common approaches to develop a recursive algorithm are:
-    1. Bottom-Up Approach
-    <br>
-    Start with solving a simple case such as a list with 1 element and then think about how you can *build* the solution for one case off the previous case.
-    2. Top-Down Approach
-    <br>
-    In this approach we think about how we can divide the problem for case N into subproblems. Be careful of overlap between cases.
-    3. Half-and-Half Approach
-    <br>
-    This approach divides the data in half.
-    <br>
-    Examples:
+1. Bottom-Up Approach
+<br>
+Start with solving a simple case such as a list with 1 element and then think about how you can *build* the solution for one case off the previous case.
+2. Top-Down Approach
+<br>
+In this approach we think about how we can divide the problem for case N into subproblems. Be careful of overlap between cases.
+3. Half-and-Half Approach
+<br>
+This approach divides the data in half.
+<br>
+Examples:
 
-        1. Binary Search
-            - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
-        2. Merge Sort
-            - Sort each half of the array and then merge the sorted halves.
+    1. Binary Search
+        - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
+    2. Merge Sort
+        - Sort each half of the array and then merge the sorted halves.
 
 - Can be very space inefficient. Each recursive call adds a new layer to the [stack](#memory), which means that if your algorithm recurses to a depth of n, it uses at least O(n) memory. 
 
