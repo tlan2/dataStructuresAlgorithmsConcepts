@@ -499,6 +499,7 @@ In this approach we think about how we can divide the problem for case N into su
 
 3. Half-and-Half Approach
 This approach divides the data in half.
+
 Examples:
     1. Binary Search
         - First figure out which half to search an a sorted array to search and then recurse and search for it in half.
