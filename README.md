@@ -149,10 +149,10 @@ A tree is a data structure composed of nodes that:
     - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.     
 
 ### Real-Life Examples
-1. Social Networking - Trees are used to represent/identify interesting connections. "Does Harry and Sally have any common friend(s)?"
-2. Game Engines - Some game engines build trees to accurately simulate human movement with a tree correspond to a set of actions.
-3. PDFs are a tree-based format. Contains a *root* node followed by a *catalog* node which is followed by *pages* node which has several child *page* nodes. The digital document is often stored as a balanced tree implementation.
-4. File Systems - Folders and files follow a tree-like structure.
+1. **Social Networking** - Trees are used to represent/identify interesting connections. "Does Harry and Sally have any common friend(s)?"
+2. **Game Engines** - Some game engines build trees to accurately simulate human movement with a tree correspond to a set of actions.
+3. **PDFs** -  are a tree-based format. Contains a *root* node followed by a *catalog* node which is followed by *pages* node which has several child *page* nodes. The digital document is often stored as a balanced tree implementation.
+4. **File Systems** - Folders and files follow a tree-like structure.
 <br/>![File System Tree](images/fileSystem.jpg)
 ### Big O
 ![Big O Table Header](images/bigOheader.png)
@@ -160,7 +160,7 @@ A tree is a data structure composed of nodes that:
 <br/>
 
 ### Resources 
-1. Data Structures - Trees (by Cracking the Coding Interiew author Gayle McDowell) Video[ (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
+1. Data Structures - Trees (by Cracking the Coding Interview author Gayle McDowell) Video[ (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
 2. "Trees vs. Graphs" Article [(Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
 3. "Real world examples of tree structures" [(Stack Overflow)](https://stackoverflow.com/questions/577659/real-world-examples-of-tree-structures)
 
