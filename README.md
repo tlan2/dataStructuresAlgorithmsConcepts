@@ -195,7 +195,6 @@ A graph is a collection of nodes with edges between (some of) them.
 
 ![Subgraph](images/subgraph.png)
 - A graph can have cycles. An "acyclic graph" is one without cycles.
-<br/>
 
 ![Graph w/ cycle & Acyclic Graph](images/cyclicAcyclicGraphs.png)
 - Programmatically, there are two common ways to represent a graph:
@@ -204,6 +203,7 @@ A graph is a collection of nodes with edges between (some of) them.
         - Every vertex/node stores a list of adjacent vertices.
         - Simple Class Definition
         <br/>
+        
         ![Graph Class](images/graphClass.png)
         
     2. Adjacency Matrixes
