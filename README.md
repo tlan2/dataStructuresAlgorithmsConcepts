@@ -22,7 +22,8 @@
 In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am reviewing and coding all listed concepts in the table above from scratch.
 
 ## Built With
-* [JavaScript (Wikipedia)](https://en.wikipedia.org/wiki/JavaScript)
+* JavaScript [(Wikipedia)](https://en.wikipedia.org/wiki/JavaScript)
+* Python [(Wikipedia)](https://en.wikipedia.org/wiki/Python_(programming_language))
 # Data Structures
 ## Linked Lists
 Singly Linked List
@@ -92,7 +93,7 @@ A tree is a data structure composed of nodes that:
 * **Root**: top node of tree where all operations start
 * **Node**: each item in the tree, usually key-value
 * **Parent**: a node which is a *predecessor* of any node
-* **Child**: a node which is a *descendant* of any ndoe
+* **Child**: a node which is a *descendant* of any node
 * **Siblings**: a group of nodes that have the same parent
 * **Leaf**: a node without children
 * **Level**: 1 + the number of edges between the node and the root
@@ -148,7 +149,11 @@ A tree is a data structure composed of nodes that:
     - Post-order traversal visits the current node after its child nodes (hence the name "post order"). In a post-order traversal, the root is always the last node visited.     
 
 ### Real-Life Examples
-
+1. Social Networking - Trees are used to represent/identify interesting connections. "Does Harry and Sally have any common friend(s)?"
+2. Game Engines - Some game engines build trees to accurately simulate human movement with a tree correspond to a set of actions.
+3. PDFs are a tree-based format. Contains a *root* node followed by a *catalog* node which is followed by *pages* node which has several child *page* nodes. The digital document is often stored as a balanced tree implementation.
+4. File Systems - Folders and files follow a tree-like structure.
+<br/>![File System Tree](images/fileSystem.jpg)
 ### Big O
 ![Big O Table Header](images/bigOheader.png)
 ![Trees Big O](images/treesBigO.png)
@@ -157,11 +162,13 @@ A tree is a data structure composed of nodes that:
 ### Resources 
 1. Data Structures - Trees (by Cracking the Coding Interiew author Gayle McDowell) Video[ (YouTube)](https://www.youtube.com/watch?v=oSWTXtMglKE)
 2. "Trees vs. Graphs" Article [(Open4Tech.com)](https://open4tech.com/trees-vs-graphs/)
+3. "Real world examples of tree structures" [(Stack Overflow)](https://stackoverflow.com/questions/577659/real-world-examples-of-tree-structures)
 
 [Back to Table of Contents](#table-of-contents)
 ## Tries 
 
 ![Tries Example](images/tries.png)
+
 File: **
 - A trie (sometimes called a prefix tree) is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may
 represent a word.
