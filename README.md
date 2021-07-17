@@ -517,6 +517,8 @@ This approach divides the data in half.
 
 ### Resources 
 1. Algorithms: Recursion (by Cracking the Coding Interview author Gayle McDowell) Video [(YouTube)](https://www.youtube.com/watch?v=KEEKn7Me-ms&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=33)
+2. Python: RECURSION Explained [(YouTube)](https://www.youtube.com/watch?v=wMNrSM5RFMc)
+<br/>Note: Excellent overview of recursion
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
