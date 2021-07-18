@@ -22,7 +22,6 @@
 In order to enhance my coding skills and perform well in technical interviews, as per recommendation by *Cracking the Coding Interview* Author Gayle McDowell (pgs. 60-61), I am reviewing and coding all listed concepts in the table above from scratch.
 
 ## Built With
-* JavaScript [(Wikipedia)](https://en.wikipedia.org/wiki/JavaScript)
 * Python [(Wikipedia)](https://en.wikipedia.org/wiki/Python_(programming_language))
 # Data Structures
 ## Linked Lists
@@ -37,7 +36,7 @@ Circular Linked List
 
 ![Circular Linked List](images/circularLinkedList.jpg)
 
-File: *[dataStructures/linkedLists.js](dataStructures/singlyLinkedList.js)*
+File: *[dataStructures/linkedList.py](dataStructures/linkedList.py)*
 
 A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.
 <br/>
@@ -45,6 +44,20 @@ A linked list is a data structure that represents a sequence of nodes. In a sing
 It is conceptually the same as an array with the only difference bing the efficiency of various operations. Most importantly:
 - Insertion in middle: O(1) for linked list, O(n) for array
 - Direct access to middle element: O(n) for linked list, O(1) for array
+
+### Insertion
+#### Insert at Beginning
+![Insert at Beginning](images/insertBeginLinkedList.png)
+#### Insert at End
+![Insert at End](images/insertEndLinkedList.gif)
+#### Insert in the Middle
+![Insert in the Middle](images/insertMiddleLinkedList.gif)
+
+### Deletion
+#### Delete Head
+![Delete Head](images/deleteHeadLinkedList.png)
+#### Delete Node
+![Delete non-head Node](images/deleteMiddleLinkedList.png)
 
 | Pros | Cons |
 | :---: | :---: |
@@ -69,6 +82,7 @@ Message is broken down into packets and each packet has a key to the next one.
 2. "Linked Lists in JavaScript" Article [(codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 3. Data Structures - Linked Lists Video (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
 4. "What is a practical, real world example of the Linked List?" Article [(stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
+5. Linked Lists [(codesdope.com)](https://www.codesdope.com/course/data-structures-linked-lists/)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -585,6 +599,7 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Cracking the Coding Interview](https://www.crackingthecodinginterview.com)
 - [Data Structures Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX)
 - [Algorithms Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL)
+- [Stack Overflow](https://stackoverflow.com)
 
 <br/>
 
