@@ -24,6 +24,10 @@ In order to enhance my coding skills and perform well in technical interviews, a
 ## Built With
 * Python [(Wikipedia)](https://en.wikipedia.org/wiki/Python_(programming_language))
 # Data Structures
+![Book Organization Structures](images/books.png)
+A data structure is the way we store and organize our data in memory. For example, books we can stack or put them on a shelf.
+Depending on your goal, certain data structures will work better than others.
+
 ## Linked Lists
 Singly Linked List
 ![Singly Linked List](images/singlyLinkedList.png)
@@ -41,7 +45,7 @@ File: *[dataStructures/linkedList.py](dataStructures/linkedList.py)*
 A linked list is a data structure that represents a sequence of nodes. In a singly linked list, each node points to the next node in the linked list. A doubly linked list gives each node pointers to both the next node and the previous node.
 <br/>
 <br/>
-It is conceptually the same as an array with the only difference bing the efficiency of various operations. Most importantly:
+It is conceptually the same as an array with the only difference being the efficiency of various operations. Most importantly:
 - Insertion in middle: O(1) for linked list, O(n) for array
 - Direct access to middle element: O(n) for linked list, O(1) for array
 
@@ -344,6 +348,10 @@ File: **
 
 [Back to Table of Contents](#table-of-contents) 
 # Algorithms
+An algorithm is a set of well-defined steps used to solve a specific problem which takes an input and gives an output. 
+These are used not just in computer science, but everyday life. For example, a common everyday algorithm is a cooking recipe.
+Algorithms are important because they help us optimize time spent and memory used when creating a solution to a programming problem.
+
 ## Breadth-First Search
 
 ![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
