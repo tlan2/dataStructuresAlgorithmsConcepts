@@ -235,7 +235,7 @@ A graph is a collection of nodes with edges between (some of) them.
     2. Adjacency Matrixes
         - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
-<br/>
+
 - Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 
 ### Resources 
@@ -351,14 +351,15 @@ File: **
 
 [Back to Table of Contents](#table-of-contents) 
 # Algorithms
-![Hopscotch Algorithm(images/algorithms.jpg)
+
+![Hopscotch](images/algorithms.jpg)
+
 <br/>
 An algorithm is a set of well-defined steps used to solve a specific problem which takes an input and gives an output. 
 These are used not just in computer science, but everyday life. For example, a common everyday algorithm is a cooking recipe.
 Algorithms are important because they help us optimize time spent and memory used when creating a solution to a programming problem.
 
 ## Breadth-First Search
-
 ![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
 <br/>
 File: **
