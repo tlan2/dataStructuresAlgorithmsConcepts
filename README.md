@@ -25,6 +25,7 @@ In order to enhance my coding skills and perform well in technical interviews, a
 * Python [(Wikipedia)](https://en.wikipedia.org/wiki/Python_(programming_language))
 # Data Structures
 ![Book Organization Structures](images/books.png)
+<br/>
 A data structure is the way we store and organize our data in memory. For example, books we can stack or put them on a shelf.
 Depending on your goal, certain data structures will work better than others.
 
@@ -86,7 +87,7 @@ Message is broken down into packets and each packet has a key to the next one.
 2. "Linked Lists in JavaScript" Article [(codeburst.io)](https://codeburst.io/linked-lists-in-javascript-es6-code-part-1-6dd349c3dcc3)
 3. Data Structures - Linked Lists Video (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=njTh_OwMljA)
 4. "What is a practical, real world example of the Linked List?" Article [(stackoverflow)](https://stackoverflow.com/questions/644167/what-is-a-practical-real-world-example-of-the-linked-list)
-5. Linked Lists [(codesdope.com)](https://www.codesdope.com/course/data-structures-linked-lists/)
+5. "Linked Lists" Article [(codesdope.com)](https://www.codesdope.com/course/data-structures-linked-lists/)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -95,9 +96,10 @@ Message is broken down into packets and each packet has a key to the next one.
 
 ![Tree Diagram](images/trees.png)
 
-File: **
-
-Report: *[Final Project Report](https://drive.google.com/file/d/15tfnANoty4ZpfQTqUiNw9XIQhUfkCtN-/view)* on B-trees, Red-Black trees, and Binary Search trees for Graduate Algorithms Course
+Files: 
+- *[dataStructures/treesArray](dataStructures/treesArray.py)*
+- *[dataStructures/treesLinked.py](dataStructures/treesLinked.py)*
+- *[Final Project Report](https://drive.google.com/file/d/15tfnANoty4ZpfQTqUiNw9XIQhUfkCtN-/view)* on B-trees, Red-Black trees, and Binary Search trees for Graduate Algorithms Course
 
 A tree is a data structure composed of nodes that:
 * Has a root node
@@ -227,15 +229,14 @@ A graph is a collection of nodes with edges between (some of) them.
         - Most common way to represent a graph. Node classes are usually used.
         - Every vertex/node stores a list of adjacent vertices.
         - Simple Class Definition
-        <br/>
         
         ![Graph Class](images/graphClass.png)
         
     2. Adjacency Matrixes
         - NxN bolean matrix where N is the number of nodes. A true value at matrix[i][j] indicates an edge from node i to node j.
         - In an undirected grpah, an adjacency matrix will be symmetric. In a directed graph, it will not be.
-- Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 <br/>
+- Graphs with adjacency may be somewhat less efficient. In the adjacency list representation, you can easily iterate through the neighbors of the node. In the adjacency matrix, you will need to iterate through all the nodes to identify a node's neighbors.
 
 ### Resources 
 1.
@@ -246,6 +247,7 @@ A graph is a collection of nodes with edges between (some of) them.
 ## Stacks 
 
 ![Stack Example](images/stackExample.png)
+<br/>
 File: **
 - A stack is a stack of data.
 - Uses last-in first-out (LIFO) ordering. For example, the most recent dinner plate put on the stack is the first item to be removed.
@@ -330,6 +332,7 @@ File: **
 ## Hash Tables
 
 ![Hash Table Example](images/hashTable.png)
+<br/>
 File: **
 - A data structure that mapes keys to values for highly efficient lookups
 - Example Simple Yet Common Implementation:
@@ -348,6 +351,8 @@ File: **
 
 [Back to Table of Contents](#table-of-contents) 
 # Algorithms
+![Hopscotch Algorithm(images/algorithms.jpg)
+<br/>
 An algorithm is a set of well-defined steps used to solve a specific problem which takes an input and gives an output. 
 These are used not just in computer science, but everyday life. For example, a common everyday algorithm is a cooking recipe.
 Algorithms are important because they help us optimize time spent and memory used when creating a solution to a programming problem.
@@ -355,6 +360,7 @@ Algorithms are important because they help us optimize time spent and memory use
 ## Breadth-First Search
 
 ![BFS Graph](images/bfsGraph.png) ![BFS Key](images/bfsKey.png)
+<br/>
 File: **
 - BFS starts at the root and explores each neighbor before going o nto any of their children. We go wide (hence *breadth*-first search) before we go deep.
 - BFS is *not* recursive and uses a queue to visit all the neighbors.
@@ -369,6 +375,7 @@ File: **
 ## Depth-First Search
 
 ![DFS Example](images/dfs.png)
+<br/>
 File: **
 - DFS preferred if you want to visit every node in the graph.
 - Exhaustively explore each branch before moving onto the next one.
@@ -399,6 +406,7 @@ File: **
 ## Merge Sort
 
 ![Merge Sort Example](images/mergeSort.png)
+<br/>
 File: **
 - "Merge sort divides the array in half, sorts each of those halves, and then merges them back together. Each
 of those halves has the same sorting algorithm applied to it." - pg. 146, Cracking the Coding Interview
@@ -435,9 +443,9 @@ of those halves has the same sorting algorithm applied to it." - pg. 146, Cracki
 ![Bit Manipulation Example](images/bitManipulation.png)
 
 - Bit Facts and Tricks
-<br>
 
 ![Bit Rules](images/bitRules.png)
+<br/>
 File: **
 - Two's Complement
     - The first bit decides whether a number is positive or negative. If the first number is 1 then it is positive and if it is 0 then it is negative.
@@ -465,6 +473,7 @@ File: **
 ## Memory 
 
 ![Stack vs. Heap Example](images/stackHeap.gif)
+<br/>
 File: **
 - Stack Allocation
     - Contiguous blocks of memory
@@ -514,6 +523,7 @@ File: **
 ## Recursion
 
 ![Recursion Example](images/recursion.png)
+<br/>
 File: **
 - Statements that indicate it is good candidate for recursion:
     - "Design an algorithm to compute the nth..."
@@ -547,6 +557,7 @@ This approach divides the data in half.
 ## Dynamic Programming
 
 ![Dynamic Programming Example](images/dynamicProgramming.png)
+<br/>
 File: **
 
 - Is a recursive algorithm that finds the overlapping subproblems and caches the results for future recursive calls.
@@ -589,6 +600,7 @@ File: *concepts/bigO.apkg* (Anki Deck)
 ### Resources 
 1. Big O Notation (by Cracking the Coding Interview author Gayle McDowell) [(YouTube)](https://www.youtube.com/watch?v=v4cd1O4zkGw&list=PLOuZYwbmgZWXvkghUyMLdI90IwxbNCiWK&index=7)
 2. [bigOcheatsheet.com](https://www.bigocheatsheet.com)
+3. Big O Notation [interviewcake.com](https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity)
 <br/>
 
 [Back to Table of Contents](#table-of-contents)
@@ -608,8 +620,4 @@ Tom Lancaster - thomas.m.lancaster@gmail.com
 - [Data Structures Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX)
 - [Algorithms Videos(HackerRank)](https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL)
 - [Stack Overflow](https://stackoverflow.com)
-
-<br/>
-
-[Back to Table of Contents](#table-of-contents)
 
