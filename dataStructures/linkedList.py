@@ -1,3 +1,7 @@
+# Tom Lancaster - July 2021
+# Example - Linked Lists
+# Source: https://www.codesdope.com/course/data-structures-linked-lists/
+
 class Node:
     def __init__(self, data):
         self.data = data
